@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="13" passed="13" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-10-08T17:14:40 EDT" name="Selenium Fun Suite" finished-at="2025-10-08T17:15:46 EDT" duration-ms="65504">
+    <groups>
+    </groups>
+    <test started-at="2025-10-08T17:14:40 EDT" name="Core Selenium Tests - Locators" finished-at="2025-10-08T17:14:47 EDT" duration-ms="6558">
+      <class name="core.LocatorsTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.LocatorsTest@51891008]" started-at="2025-10-08T17:14:41 EDT" name="setup" finished-at="2025-10-08T17:14:45 EDT" duration-ms="4789" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://testautomationpractice.blogspot.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="locatorsTest()[pri:0, instance:core.LocatorsTest@51891008]" started-at="2025-10-08T17:14:46 EDT" name="locatorsTest" description="Verify various locators and element visibility" finished-at="2025-10-08T17:14:47 EDT" duration-ms="877" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- locatorsTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.LocatorsTest@51891008]" started-at="2025-10-08T17:14:47 EDT" name="tearDown" finished-at="2025-10-08T17:14:47 EDT" duration-ms="258" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- core.LocatorsTest -->
+    </test> <!-- Core Selenium Tests - Locators -->
+    <test started-at="2025-10-08T17:14:47 EDT" name="Core Selenium Tests - Waits" finished-at="2025-10-08T17:15:09 EDT" duration-ms="21633">
+      <class name="core.WaitsTests">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.WaitsTests@536dbea0]" started-at="2025-10-08T17:14:47 EDT" name="setup" finished-at="2025-10-08T17:14:50 EDT" duration-ms="2987" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://the-internet.herokuapp.com/dynamic_loading/1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="explicitWaitTest()[pri:0, instance:core.WaitsTests@536dbea0]" started-at="2025-10-08T17:14:50 EDT" name="explicitWaitTest" description="Demonstrate Explicit Wait" finished-at="2025-10-08T17:14:56 EDT" duration-ms="5623" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- explicitWaitTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.WaitsTests@536dbea0]" started-at="2025-10-08T17:14:56 EDT" name="tearDown" finished-at="2025-10-08T17:14:56 EDT" duration-ms="197" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.WaitsTests@536dbea0]" started-at="2025-10-08T17:14:56 EDT" name="setup" finished-at="2025-10-08T17:14:59 EDT" duration-ms="3065" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://the-internet.herokuapp.com/dynamic_loading/1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="fluentWaitTest()[pri:0, instance:core.WaitsTests@536dbea0]" started-at="2025-10-08T17:14:59 EDT" name="fluentWaitTest" description="Demonstrate Fluent Wait" finished-at="2025-10-08T17:15:05 EDT" duration-ms="6241" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fluentWaitTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.WaitsTests@536dbea0]" started-at="2025-10-08T17:15:05 EDT" name="tearDown" finished-at="2025-10-08T17:15:05 EDT" duration-ms="190" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.WaitsTests@536dbea0]" started-at="2025-10-08T17:15:05 EDT" name="setup" finished-at="2025-10-08T17:15:08 EDT" duration-ms="3038" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://the-internet.herokuapp.com/dynamic_loading/1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="implicitWaitTest()[pri:0, instance:core.WaitsTests@536dbea0]" started-at="2025-10-08T17:15:08 EDT" name="implicitWaitTest" description="Demonstrate Implicit Wait" finished-at="2025-10-08T17:15:09 EDT" duration-ms="57" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- implicitWaitTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.WaitsTests@536dbea0]" started-at="2025-10-08T17:15:09 EDT" name="tearDown" finished-at="2025-10-08T17:15:09 EDT" duration-ms="178" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- core.WaitsTests -->
+    </test> <!-- Core Selenium Tests - Waits -->
+    <test started-at="2025-10-08T17:15:09 EDT" name="Core Selenium Tests - Alerts" finished-at="2025-10-08T17:15:19 EDT" duration-ms="10479">
+      <class name="core.AlertsTests">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.AlertsTests@51bf5add]" started-at="2025-10-08T17:15:09 EDT" name="setup" finished-at="2025-10-08T17:15:12 EDT" duration-ms="3005" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://the-internet.herokuapp.com/javascript_alerts]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="confirmationAlertTest()[pri:0, instance:core.AlertsTests@51bf5add]" started-at="2025-10-08T17:15:12 EDT" name="confirmationAlertTest" finished-at="2025-10-08T17:15:12 EDT" duration-ms="409" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- confirmationAlertTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.AlertsTests@51bf5add]" started-at="2025-10-08T17:15:12 EDT" name="tearDown" finished-at="2025-10-08T17:15:12 EDT" duration-ms="190" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.AlertsTests@51bf5add]" started-at="2025-10-08T17:15:12 EDT" name="setup" finished-at="2025-10-08T17:15:15 EDT" duration-ms="2827" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://the-internet.herokuapp.com/javascript_alerts]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="promptAlertTest()[pri:0, instance:core.AlertsTests@51bf5add]" started-at="2025-10-08T17:15:15 EDT" name="promptAlertTest" finished-at="2025-10-08T17:15:16 EDT" duration-ms="352" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- promptAlertTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.AlertsTests@51bf5add]" started-at="2025-10-08T17:15:16 EDT" name="tearDown" finished-at="2025-10-08T17:15:16 EDT" duration-ms="191" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.AlertsTests@51bf5add]" started-at="2025-10-08T17:15:16 EDT" name="setup" finished-at="2025-10-08T17:15:19 EDT" duration-ms="2911" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://the-internet.herokuapp.com/javascript_alerts]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="simpleAlertTest()[pri:0, instance:core.AlertsTests@51bf5add]" started-at="2025-10-08T17:15:19 EDT" name="simpleAlertTest" finished-at="2025-10-08T17:15:19 EDT" duration-ms="345" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- simpleAlertTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.AlertsTests@51bf5add]" started-at="2025-10-08T17:15:19 EDT" name="tearDown" finished-at="2025-10-08T17:15:19 EDT" duration-ms="224" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- core.AlertsTests -->
+    </test> <!-- Core Selenium Tests - Alerts -->
+    <test started-at="2025-10-08T17:15:19 EDT" name="Core Selenium Tests - Frames" finished-at="2025-10-08T17:15:42 EDT" duration-ms="23248">
+      <class name="core.FramesTests">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.FramesTests@2462cb01]" started-at="2025-10-08T17:15:19 EDT" name="setup" finished-at="2025-10-08T17:15:22 EDT" duration-ms="2759" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://ui.vision/demo/webtest/frames/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="frame1Test()[pri:0, instance:core.FramesTests@2462cb01]" started-at="2025-10-08T17:15:22 EDT" name="frame1Test" finished-at="2025-10-08T17:15:24 EDT" duration-ms="1716" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- frame1Test -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.FramesTests@2462cb01]" started-at="2025-10-08T17:15:24 EDT" name="tearDown" finished-at="2025-10-08T17:15:24 EDT" duration-ms="202" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.FramesTests@2462cb01]" started-at="2025-10-08T17:15:24 EDT" name="setup" finished-at="2025-10-08T17:15:28 EDT" duration-ms="4058" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://ui.vision/demo/webtest/frames/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="frame2Test()[pri:0, instance:core.FramesTests@2462cb01]" started-at="2025-10-08T17:15:28 EDT" name="frame2Test" finished-at="2025-10-08T17:15:28 EDT" duration-ms="325" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- frame2Test -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.FramesTests@2462cb01]" started-at="2025-10-08T17:15:28 EDT" name="tearDown" finished-at="2025-10-08T17:15:29 EDT" duration-ms="208" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.FramesTests@2462cb01]" started-at="2025-10-08T17:15:29 EDT" name="setup" finished-at="2025-10-08T17:15:33 EDT" duration-ms="4567" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://ui.vision/demo/webtest/frames/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="frame3Test()[pri:0, instance:core.FramesTests@2462cb01]" started-at="2025-10-08T17:15:33 EDT" name="frame3Test" finished-at="2025-10-08T17:15:33 EDT" duration-ms="401" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- frame3Test -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.FramesTests@2462cb01]" started-at="2025-10-08T17:15:34 EDT" name="tearDown" finished-at="2025-10-08T17:15:34 EDT" duration-ms="217" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.FramesTests@2462cb01]" started-at="2025-10-08T17:15:34 EDT" name="setup" finished-at="2025-10-08T17:15:38 EDT" duration-ms="3867" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://ui.vision/demo/webtest/frames/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="frame4Test()[pri:0, instance:core.FramesTests@2462cb01]" started-at="2025-10-08T17:15:38 EDT" name="frame4Test" finished-at="2025-10-08T17:15:38 EDT" duration-ms="307" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- frame4Test -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.FramesTests@2462cb01]" started-at="2025-10-08T17:15:38 EDT" name="tearDown" finished-at="2025-10-08T17:15:38 EDT" duration-ms="201" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.FramesTests@2462cb01]" started-at="2025-10-08T17:15:38 EDT" name="setup" finished-at="2025-10-08T17:15:42 EDT" duration-ms="3575" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://ui.vision/demo/webtest/frames/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="frame5Test()[pri:0, instance:core.FramesTests@2462cb01]" started-at="2025-10-08T17:15:42 EDT" name="frame5Test" finished-at="2025-10-08T17:15:42 EDT" duration-ms="353" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- frame5Test -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.FramesTests@2462cb01]" started-at="2025-10-08T17:15:42 EDT" name="tearDown" finished-at="2025-10-08T17:15:42 EDT" duration-ms="412" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- core.FramesTests -->
+    </test> <!-- Core Selenium Tests - Frames -->
+    <test started-at="2025-10-08T17:15:42 EDT" name="Core Selenium Tests - Windows" finished-at="2025-10-08T17:15:46 EDT" duration-ms="3536">
+      <class name="core.WindowsTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.WindowsTest@1ec9bd38]" started-at="2025-10-08T17:15:42 EDT" name="setup" finished-at="2025-10-08T17:15:45 EDT" duration-ms="2990" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://the-internet.herokuapp.com/windows]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="windowsTest()[pri:0, instance:core.WindowsTest@1ec9bd38]" started-at="2025-10-08T17:15:45 EDT" name="windowsTest" finished-at="2025-10-08T17:15:46 EDT" duration-ms="321" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- windowsTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.WindowsTest@1ec9bd38]" started-at="2025-10-08T17:15:46 EDT" name="tearDown" finished-at="2025-10-08T17:15:46 EDT" duration-ms="210" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- core.WindowsTest -->
+    </test> <!-- Core Selenium Tests - Windows -->
+  </suite> <!-- Selenium Fun Suite -->
+</testng-results>
