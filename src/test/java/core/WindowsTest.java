@@ -17,16 +17,18 @@ import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import io.qameta.allure.Story;
 
-@Epic("Core Selenium Tests")
 public class WindowsTest extends BaseTest {
 
-    @Feature("Window Handling Module")
-    @Story("Switch to new window and verify title")
-    @Severity(SeverityLevel.CRITICAL)
-    @Description("Clicks a link that opens a new window, switches to it, verifies its title, and closes it")
-    @Test
+	
+	@Epic("Core Selenium Tests")
+	@Feature("Window Handling Module")
+	@Story("Switch to new window and verify title")
+	@Test(description = "Click a link to open a new window, switch to it, verify title, and close it")
+	@Severity(SeverityLevel.CRITICAL)
+	@Description("Clicks a link that opens a new window, switches to it, verifies its title, and closes it")
     public void windowsTest() {
-        // Locate the link that opens a new window
+        
+		// Locate the link that opens a new window
         WebElement a_ClickHere = driver.findElement(By.linkText("Click Here"));
         
         // Click the link to open a new window
@@ -55,7 +57,7 @@ public class WindowsTest extends BaseTest {
         // Switch back to the original window
         driver.switchTo().window(originalWindow);
         
-     // Assertion: Verify the title of the original window
+        // Assertion: Verify the title of the original window
         Assert.assertEquals(driver.getTitle(), "The Internet", "New window title mismatch!");
     }
 }

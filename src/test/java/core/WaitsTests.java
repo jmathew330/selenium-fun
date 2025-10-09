@@ -21,10 +21,10 @@ import io.qameta.allure.Story;
 
 public class WaitsTests extends BaseTest {
 	
-	@Test(description = "Demonstrate Implicit Wait")
 	@Epic("Core Selenium Waits")
 	@Feature("Implicit Wait")
 	@Story("Verify element presence using implicit wait")
+	@Test(description = "Demonstrate Implicit Wait")
 	@Severity(SeverityLevel.CRITICAL)
 	@Description("Verifies the 'Start' button is present and visible using implicit wait")
 	public void implicitWaitTest() {
@@ -39,10 +39,11 @@ public class WaitsTests extends BaseTest {
         Assert.assertTrue(button_start.isDisplayed(), "'Start' button is not visible (Implicit Wait)");
 	}
 	
-	@Test(description = "Demonstrate Explicit Wait")
 	@Epic("Core Selenium Waits")
 	@Feature("Explicit Wait")
 	@Story("Wait for dynamically loaded element to appear")
+	@Test(description = "Demonstrate Explicit Wait")
+	@Severity(SeverityLevel.CRITICAL)
 	@Description("Clicks the Start button and explicitly waits for the 'Hello World!' element to become visible")
 	public void explicitWaitTest() {
 		
@@ -61,10 +62,11 @@ public class WaitsTests extends BaseTest {
 			
 	}
 	
-	@Test(description = "Demonstrate Fluent Wait")
 	@Epic("Core Selenium Waits")
 	@Feature("Fluent Wait")
 	@Story("Wait for dynamically loaded element using custom polling")
+	@Test(description = "Demonstrate Fluent Wait")
+	@Severity(SeverityLevel.CRITICAL)
 	@Description("Clicks the Start button and waits for the 'Hello World!' element using Fluent Wait with polling every 2 seconds")
 	public void fluentWaitTest() {
 		

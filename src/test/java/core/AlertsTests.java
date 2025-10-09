@@ -13,15 +13,17 @@ import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import io.qameta.allure.Story;
 
-@Epic("Core Selenium Tests")
+
 public class AlertsTests extends BaseTest {
 
+	@Epic("Core Selenium Tests")
     @Feature("Alerts Module")
     @Story("Verify simple alert behavior")
+    @Test(description = "Verify simple alert text and result after accepting")
     @Severity(SeverityLevel.CRITICAL)
     @Description("Test handles a simple JavaScript alert: verifies its text and the page result after accepting it")
-    @Test(description = "Verify simple alert text and result after accepting")
     public void simpleAlertTest() {
+		
         // Locate the button that triggers the simple alert
         WebElement button_SimpleAlert = driver.findElement(By.xpath("//button[@onclick='jsAlert()']"));
         button_SimpleAlert.click();
@@ -45,13 +47,15 @@ public class AlertsTests extends BaseTest {
         Assert.assertTrue(p_result_text.contains("You successfully clicked an alert"), 
                 "Result text mismatch for simple alert");
     }
-
+	
+	@Epic("Core Selenium Tests")
     @Feature("Alerts Module")
     @Story("Verify confirmation alert behavior")
+    @Test(description = "Verify confirmation alert text and result after dismissing")
     @Severity(SeverityLevel.CRITICAL)
     @Description("Test handles a JavaScript confirmation alert: verifies alert text and the page result after dismissing it")
-    @Test(description = "Verify confirmation alert text and result after dismissing")
     public void confirmationAlertTest() {
+		
         // Locate the button that triggers the confirmation alert
         WebElement button_ConfirmAlert = driver.findElement(By.xpath("//button[@onclick='jsConfirm()']"));
         button_ConfirmAlert.click();
@@ -75,13 +79,15 @@ public class AlertsTests extends BaseTest {
         Assert.assertTrue(p_result_text.contains("You clicked: Cancel"), 
                 "Result text mismatch for confirmation alert");
     }
-
+	
+	@Epic("Core Selenium Tests")
     @Feature("Alerts Module")
     @Story("Verify prompt alert behavior")
+    @Test(description = "Verify prompt alert text, enter input, and check result")
     @Severity(SeverityLevel.CRITICAL)
     @Description("Test handles a JavaScript prompt alert: enters text, verifies alert text, and the page result")
-    @Test(description = "Verify prompt alert text, enter input, and check result")
     public void promptAlertTest() {
+		
         // Locate the button that triggers the prompt alert
         WebElement button_PromptAlert = driver.findElement(By.xpath("//button[@onclick='jsPrompt()']"));
         button_PromptAlert.click();

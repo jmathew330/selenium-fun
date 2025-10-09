@@ -3,44 +3,64 @@
 
 <suite name="Selenium Fun Suite">
 
-    <!-- Core Selenium Tests - Locators -->
-    <test name="Core Selenium Tests - Locators">
-        <parameter name="url" value="https://testautomationpractice.blogspot.com/" />
-        <classes>
-            <class name="core.LocatorsTest"/>
-        </classes>
-    </test>
+  <!-- ========================== -->
+  <!-- 🔍 Core Selenium Tests -->
+  <!-- ========================== -->
+  <test name="Core Selenium Tests - Locators">
+    <parameter name="url" value="https://testautomationpractice.blogspot.com/" />
+    <classes>
+      <class name="core.LocatorsTest"/>
+    </classes>
+  </test>
 
-    <!-- Core Selenium Tests - Waits -->
-    <test name="Core Selenium Tests - Waits">
-        <parameter name="url" value="https://the-internet.herokuapp.com/dynamic_loading/1" />
-        <classes>
-            <class name="core.WaitsTests"/>
-        </classes>
-    </test>
+  <!-- ========================== -->
+  <!-- ⏱ Waits Tests -->
+  <!-- ========================== -->
+  <test name="Core Selenium Tests - Waits">
+    <parameter name="url" value="https://the-internet.herokuapp.com/dynamic_loading/1" />
+    <classes>
+      <class name="core.WaitsTests"/>
+    </classes>
+  </test>
 
-    <!-- Core Selenium Tests - Alerts -->
-    <test name="Core Selenium Tests - Alerts">
-        <parameter name="url" value="https://the-internet.herokuapp.com/javascript_alerts" />
-        <classes>
-            <class name="core.AlertsTests"/>
-        </classes>
-    </test>
+  <!-- ========================== -->
+  <!-- ⚠️ Alerts Tests -->
+  <!-- ========================== -->
+  <test name="Core Selenium Tests - Alerts">
+    <parameter name="url" value="https://the-internet.herokuapp.com/javascript_alerts" />
+    <classes>
+      <class name="core.AlertsTests"/>
+    </classes>
+  </test>
 
-    <!-- Core Selenium Tests - Frames -->
-    <test name="Core Selenium Tests - Frames">
-        <parameter name="url" value="https://ui.vision/demo/webtest/frames/" />
-        <classes>
-            <class name="core.FramesTests"/>
-        </classes>
-    </test>
+  <!-- ========================== -->
+  <!-- 🪟 Frames Tests -->
+  <!-- ========================== -->
+  <test name="Core Selenium Tests - Frames">
+    <parameter name="url" value="https://ui.vision/demo/webtest/frames/" />
+    <classes>
+      <class name="core.FramesTests"/>
+    </classes>
+  </test>
 
-    <!-- Core Selenium Tests - Windows -->
-    <test name="Core Selenium Tests - Windows">
-        <parameter name="url" value="https://the-internet.herokuapp.com/windows" />
-        <classes>
-            <class name="core.WindowsTest"/>
-        </classes>
-    </test>
+  <!-- ========================== -->
+  <!-- 🔄 Windows Tests -->
+  <!-- ========================== -->
+  <test name="Core Selenium Tests - Windows">
+    <parameter name="url" value="https://the-internet.herokuapp.com/windows" />
+    <classes>
+      <class name="core.WindowsTest"/>
+    </classes>
+  </test>
+
+  <!-- ========================== -->
+  <!-- 🖱 Actions Tests -->
+  <!-- ========================== -->
+  <test name="Core Selenium Tests - Mouse Actions">
+    <parameter name="url" value="https://vinothqaacademy.com/mouse-event/" />
+    <classes>
+      <class name="core.MouseActionsTests"/>
+    </classes>
+  </test>
 
 </suite>

@@ -16,8 +16,8 @@ public class LocatorsTest extends BaseTest {
 	
 	@Epic("Core Selenium Tests")
 	@Feature("Locators Module")
-    @Test(description = "Verify various locators and element visibility")
     @Story("Verify all locator types")
+    @Test(description = "Verify various locators and element visibility")
     @Severity(SeverityLevel.CRITICAL)
     @Description("This test locates elements using id, className, name, linkText, XPath, and CSS selector, and verifies their text and visibility")
 	public void locatorsTest() {
