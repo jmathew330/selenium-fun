@@ -45,6 +45,7 @@ src/
     │       ├── FramesTests.java
     │       ├── WindowsTest.java
     │       └── AlertsTests.java
+    │       └── MouseActions.java
 ```
 - **base/BaseTest.java** → WebDriver setup, teardown, and shared methods  
 - **core/** → Modular tests demonstrating different Selenium concepts  
@@ -60,22 +61,27 @@ src/
 ### 2. WaitsTests
 - **Implicit Wait:** For elements already present in the DOM  
 - **Explicit Wait:** Waits for dynamically loaded elements  
-- **Fluent Wait:** Polls for element visibility with timeout and ignore conditions  
+- **Fluent Wait:** Polls for element visibility with timeout and ignore conditions
 
-### 3. FramesTests
+### 3. AlertsTests
+- **Simple Alert:** Verifies alert text and page result after accepting  
+- **Confirmation Alert:** Verifies alert text and page result after dismissing  
+- **Prompt Alert:** Enters text, verifies alert, and validates result    
+
+### 4. FramesTests
 - Switches to frames (`frame_1` to `frame_5`)  
 - Enters text inside frame elements and switches back to default content  
 
-### 4. WindowsTest
+### 5. WindowsTest
 - Opens a new browser window  
 - Switches to the new window  
 - Validates the page title and closes the new window  
 
-### 5. AlertsTests
-- **Simple Alert:** Verifies alert text and page result after accepting  
-- **Confirmation Alert:** Verifies alert text and page result after dismissing  
-- **Prompt Alert:** Enters text, verifies alert, and validates result  
-
+### 6. MouseActionsTests
+- Mouse hover and click.
+- Double-click with assertion of result text.
+- Right-click and verify context menu links.
+- Drag-and-drop elements.
 ---
 
 ## Prerequisites
