@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Selenium Fun Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Core Selenium Tests - Mouse Actions(failed)">
-    <parameter name="url" value="https://testautomationpractice.blogspot.com/"/>
+  <test thread-count="5" name="Core Selenium Tests - Locators(failed)">
+    <parameter name="url" value="https://testautomationpractice.blogspot.com"/>
     <classes>
-      <class name="core.MouseActionsTests">
+      <class name="core.LocatorsTest">
         <methods>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="mouseHoverTest"/>
-          <include name="doubleClickTest"/>
+          <include name="locateById"/>
+          <include name="locateByName"/>
         </methods>
-      </class> <!-- core.MouseActionsTests -->
+      </class> <!-- core.LocatorsTest -->
     </classes>
-  </test> <!-- Core Selenium Tests - Mouse Actions(failed) -->
+  </test> <!-- Core Selenium Tests - Locators(failed) -->
 </suite> <!-- Failed suite [Selenium Fun Suite] -->
