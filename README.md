@@ -46,6 +46,11 @@ src/
     │       ├── WindowsTest.java
     │       └── AlertsTests.java
     │       └── MouseActions.java
+    │       ├── KeyboardActionsTests.java
+    │       ├── JavascriptExecutorTests.java
+    │       ├── ScreenshotsTests.java
+    │       ├── CheckboxesTests.java
+    │       └── RadioButtonsTests.java
 ```
 - **base/BaseTest.java** → WebDriver setup, teardown, and shared methods  
 - **core/** → Modular tests demonstrating different Selenium concepts  
@@ -82,6 +87,29 @@ src/
 - Double-click with assertion of result text.
 - Right-click and verify context menu links.
 - Drag-and-drop elements.
+
+### 7. KeyboardActionsTests
+- **Type Keys Test:** Types text into input fields and verifies each key press  
+- **Special Keys Test:** Tests Escape, Backspace, Tab, and Shift key detection  
+
+### 8. JavascriptExecutorTests
+- **Scroll Test:** Scrolls page down, to bottom, and back to top  
+- **Click Test:** Clicks elements via JS and validates dynamic messages  
+- **Set Values Test:** Populates form fields using JS, submits, and verifies table output  
+
+### 9. ScreenshotsTests
+- **Full Page Screenshot:** Captures the entire webpage  
+- **Element Screenshot:** Captures a specific element (e.g., logo)  
+
+### 10. CheckboxesTests
+- **Single Checkbox Test:** Selects and validates one checkbox  
+- **Multiple Checkboxes Test:** Selects multiple checkboxes, validates, and deselects one  
+
+### 11. RadioButtonsTests
+- **Select 'Yes' Radio Button:** Verifies selection and confirmation message  
+- **Select 'Impressive' Radio Button:** Verifies selection and confirmation message  
+- **Verify Disabled 'No' Radio Button:** Confirms it is not clickable  
+  
 ---
 
 ## Prerequisites
