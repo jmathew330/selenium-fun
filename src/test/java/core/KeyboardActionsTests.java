@@ -5,7 +5,6 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import base.BaseTest;
 import io.qameta.allure.Description;
 import io.qameta.allure.Epic;
@@ -14,15 +13,26 @@ import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import io.qameta.allure.Story;
 
+/**
+ * KeyboardActionsTests demonstrates how to simulate keyboard interactions using Selenium WebDriver.
+ * 
+ * The class covers:
+ * 1. Typing regular text: Sends a sequence of characters to an input field and verifies that each key press is detected correctly.
+ * 2. Sending special keys: Tests special keys such as Escape, Backspace, Tab, and Shift, and verifies that the web page detects them correctly.
+ * 
+ * These tests showcase best practices for interacting with input fields and validating user keyboard events,
+ * ensuring that both standard and special keys are handled as expected.
+ */
+
+@Epic("Core Selenium Tests")
+@Feature("Keyboard Actions Module")
 public class KeyboardActionsTests extends BaseTest {
 	
-	@Epic("Core Selenium Tests")
-	@Feature("Keyboard Actions Module")
 	@Story("Type and verify keyboard input detection")
 	@Test(description = "Type 'Selenium' and verify each key is detected correctly")
 	@Severity(SeverityLevel.CRITICAL)
 	@Description("Types the word 'Selenium' and verifies that each key press is detected correctly")
-    public void typeKeysTest() {
+    public void typeKeysTest() throws InterruptedException {
 		
         // Locate the input field where keys will be typed
         WebElement input_target = driver.findElement(By.id("target"));
@@ -44,6 +54,8 @@ public class KeyboardActionsTests extends BaseTest {
 
             // Type the character into the input box
             input_target.sendKeys(String.valueOf(letter));
+            // Pause to visually observe the demo
+            pauseForDemo();
 
             // Capture the displayed message after each key press
             String p_result_text = p_result.getText();
@@ -55,13 +67,11 @@ public class KeyboardActionsTests extends BaseTest {
 		
         }
 
-	@Epic("Core Selenium Tests")
-	@Feature("Keyboard Actions Module")
 	@Story("Verify special key input detection")
 	@Test(description = "Verify that special keys are detected correctly")
 	@Severity(SeverityLevel.NORMAL)
 	@Description("Sends special keys (Escape, Backspace, Tab, Shift) and verifies they are detected correctly")
-    public void typeSpecialKeysTest() {
+    public void typeSpecialKeysTest() throws InterruptedException {
         // Locate the same input field where special keys will be pressed
         WebElement input_target = driver.findElement(By.id("target"));
 
@@ -76,6 +86,8 @@ public class KeyboardActionsTests extends BaseTest {
 
             // Send the special key to the input field
             input_target.sendKeys(key);
+            // Pause to visually observe the demo
+            pauseForDemo();
 
             // Capture the displayed message for the special key
             String p_result_text = p_result.getText();

@@ -3,14 +3,15 @@
 
 <suite name="Selenium Fun Suite">
 
-  <!-- ========================== -->
-  <!-- 🔍 Locators Tests -->
-  <!-- ========================== -->
-  <test name="Core Selenium Tests - Locators">
-    <parameter name="url" value="https://testautomationpractice.blogspot.com" />
-    <classes>
-      <class name="core.LocatorsTest" />
-    </classes>
-  </test>
+
+    <!-- ========================== -->
+    <!-- ⏱ Waits Tests -->
+    <!-- ========================== -->
+    <test name="Core Selenium Tests - Waits">
+        <parameter name="url" value="https://the-internet.herokuapp.com/dynamic_loading/1" />
+        <classes>
+            <class name="core.WaitsTests" />
+        </classes>
+    </test>
 
 </suite>

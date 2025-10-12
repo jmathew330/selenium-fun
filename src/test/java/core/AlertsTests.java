@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
 import base.BaseTest;
 import io.qameta.allure.Description;
 import io.qameta.allure.Epic;
@@ -13,24 +14,44 @@ import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import io.qameta.allure.Story;
 
+/**
+ * AlertsTests demonstrates handling of different types of JavaScript alerts
+ * using Selenium WebDriver. The class covers:
+ * 
+ * 1. Simple Alert: A basic alert with only an OK button. Verifies the alert text
+ *    and the resulting message on the page after accepting the alert.
+ * 
+ * 2. Confirmation Alert: An alert with OK and Cancel options. Verifies the alert
+ *    text and the resulting message on the page after dismissing or accepting the alert.
+ * 
+ * 3. Prompt Alert: An alert that accepts user input. Verifies the alert text, sends
+ *    input to the prompt, and validates the resulting message on the page.
+ * 
+ * These tests demonstrate best practices for interacting with JavaScript alerts
+ * and validating both the alert content and its impact on the web page.
+ */
 
+
+@Epic("Core Selenium Tests")
+@Feature("Alerts Module")
 public class AlertsTests extends BaseTest {
 
-	@Epic("Core Selenium Tests")
-    @Feature("Alerts Module")
     @Story("Verify simple alert behavior")
     @Test(description = "Verify simple alert text and result after accepting")
     @Severity(SeverityLevel.CRITICAL)
     @Description("Test handles a simple JavaScript alert: verifies its text and the page result after accepting it")
-    public void simpleAlertTest() {
+    public void simpleAlertTest() throws InterruptedException {
 		
         // Locate the button that triggers the simple alert
         WebElement button_SimpleAlert = driver.findElement(By.xpath("//button[@onclick='jsAlert()']"));
+        // Pause to visually observe the demo
+        pauseForDemo();
         button_SimpleAlert.click();
 
         // Switch focus to the alert
         Alert alert_simple = driver.switchTo().alert();
-
+        // Pause to visually observe the demo
+        pauseForDemo();
         // Capture alert text
         String alert_simple_text = alert_simple.getText();
         // Assertion: Verify alert displays the correct message
@@ -48,20 +69,22 @@ public class AlertsTests extends BaseTest {
                 "Result text mismatch for simple alert");
     }
 	
-	@Epic("Core Selenium Tests")
-    @Feature("Alerts Module")
     @Story("Verify confirmation alert behavior")
     @Test(description = "Verify confirmation alert text and result after dismissing")
     @Severity(SeverityLevel.CRITICAL)
     @Description("Test handles a JavaScript confirmation alert: verifies alert text and the page result after dismissing it")
-    public void confirmationAlertTest() {
+    public void confirmationAlertTest() throws InterruptedException {
 		
         // Locate the button that triggers the confirmation alert
         WebElement button_ConfirmAlert = driver.findElement(By.xpath("//button[@onclick='jsConfirm()']"));
+        // Pause to visually observe the demo
+        pauseForDemo();
         button_ConfirmAlert.click();
 
         // Switch focus to the alert
         Alert alert_confirm = driver.switchTo().alert();
+        // Pause to visually observe the demo
+        pauseForDemo();
 
         // Capture alert text
         String alert_confirm_text = alert_confirm.getText();
@@ -80,20 +103,22 @@ public class AlertsTests extends BaseTest {
                 "Result text mismatch for confirmation alert");
     }
 	
-	@Epic("Core Selenium Tests")
-    @Feature("Alerts Module")
     @Story("Verify prompt alert behavior")
     @Test(description = "Verify prompt alert text, enter input, and check result")
     @Severity(SeverityLevel.CRITICAL)
     @Description("Test handles a JavaScript prompt alert: enters text, verifies alert text, and the page result")
-    public void promptAlertTest() {
+    public void promptAlertTest() throws InterruptedException {
 		
         // Locate the button that triggers the prompt alert
         WebElement button_PromptAlert = driver.findElement(By.xpath("//button[@onclick='jsPrompt()']"));
+        // Pause to visually observe the demo
+        pauseForDemo();
         button_PromptAlert.click();
 
         // Switch focus to the alert
         Alert alert_prompt = driver.switchTo().alert();
+        // Pause to visually observe the demo
+        pauseForDemo();
 
         // Enter text into the prompt alert
         alert_prompt.sendKeys("Testing is fun");

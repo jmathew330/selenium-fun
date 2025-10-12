@@ -23,28 +23,30 @@ import utils.DropdownsTestsUtils;
  * functionality. Includes selection by visible text, value, index, and 
  * handling of multi-select dropdowns.
  */
+
+@Epic("Core Selenium Tests")
+@Feature("Dropdown Handling Module")
 public class DropdownsTests extends BaseTest {
 
     // ----------------------
     // Single-selection dropdown tests
     // ----------------------
 
-    @Epic("Core Selenium Tests")
-    @Feature("Dropdown Handling Module")
     @Story("Select option by visible text")
     @Test(description = "Select 'Brazil' from country dropdown by visible text and validate selection")
     @Severity(SeverityLevel.NORMAL)
     @Description("Selects an option by visible text from the dropdown and verifies it was selected correctly.")
     public void selectByVisibleText() throws InterruptedException {
         DropdownsTestsUtils.scrollToDropdowns(driver, js);
-
         WebElement select_country_element = driver.findElement(By.id("country"));
         Select select_country = new Select(select_country_element);
-
-        // Pause to visually observe the demo before making selection
-        DropdownsTestsUtils.pauseForDemo();
-
+        // Highlight the element for demo
+        highlightElement(js, select_country_element);
+        // Pause to visually observe the demo
+        pauseForDemo();
         select_country.selectByVisibleText("Brazil");
+        // Pause to visually observe the demo
+        pauseForDemo();
 
         // Verify selected option
         WebElement selectedOption = select_country.getFirstSelectedOption();
@@ -53,22 +55,21 @@ public class DropdownsTests extends BaseTest {
         Assert.assertTrue(selectedOptionText.contains("Brazil"), "Selected option text should contain 'Brazil'.");
     }
 
-    @Epic("Core Selenium Tests")
-    @Feature("Dropdown Handling Module")
     @Story("Select option by value")
     @Test(description = "Select 'France' from country dropdown by value and validate selection")
     @Severity(SeverityLevel.NORMAL)
     @Description("Selects an option by value from the dropdown and verifies the correct option was selected.")
     public void selectByValue() throws InterruptedException {
         DropdownsTestsUtils.scrollToDropdowns(driver, js);
-
         WebElement select_country_element = driver.findElement(By.id("country"));
         Select select_country = new Select(select_country_element);
-
-        // Pause to visually observe the demo before making selection
-        DropdownsTestsUtils.pauseForDemo();
-
+        // Highlight the element for demo
+        highlightElement(js, select_country_element);
+        // Pause to visually observe the demo
+        pauseForDemo();
         select_country.selectByValue("france");
+        // Pause to visually observe the demo
+        pauseForDemo();
 
         WebElement selectedOption = select_country.getFirstSelectedOption();
         String selectedOptionText = selectedOption.getText();
@@ -76,22 +77,21 @@ public class DropdownsTests extends BaseTest {
         Assert.assertTrue(selectedOptionText.contains("France"), "Selected option text should contain 'France'.");
     }
 
-    @Epic("Core Selenium Tests")
-    @Feature("Dropdown Handling Module")
     @Story("Select option by index")
     @Test(description = "Select 'India' from country dropdown by index and validate selection")
     @Severity(SeverityLevel.NORMAL)
     @Description("Selects an option by index from the dropdown and validates that the expected option is chosen.")
     public void selectByIndex() throws InterruptedException {
         DropdownsTestsUtils.scrollToDropdowns(driver, js);
-
         WebElement select_country_element = driver.findElement(By.id("country"));
         Select select_country = new Select(select_country_element);
-
-        // Pause to visually observe the demo before making selection
-        DropdownsTestsUtils.pauseForDemo();
-
+        // Highlight the element for demo
+        highlightElement(js, select_country_element);
+        // Pause to visually observe the demo
+        pauseForDemo();
         select_country.selectByIndex(9);
+        // Pause to visually observe the demo
+        pauseForDemo();
 
         WebElement selectedOption = select_country.getFirstSelectedOption();
         String selectedOptionText = selectedOption.getText();
@@ -103,26 +103,28 @@ public class DropdownsTests extends BaseTest {
     // Multi-selection dropdown test
     // ----------------------
 
-    @Epic("Core Selenium Tests")
-    @Feature("Dropdown Handling Module")
     @Story("Select multiple options")
     @Test(description = "Select multiple options from colors dropdown and validate selections")
     @Severity(SeverityLevel.NORMAL)
     @Description("Selects multiple options in a multi-select dropdown and validates the selections.")
     public void selectMultiDropdown() throws InterruptedException {
         DropdownsTestsUtils.scrollToDropdowns(driver, js);
-
         WebElement select_colors_element = driver.findElement(By.id("colors"));
         Select select_colors = new Select(select_colors_element);
-
         Assert.assertTrue(select_colors.isMultiple(), "Dropdown should support multiple selections.");
-
-        // Pause to visually observe the demo before making selection
-        DropdownsTestsUtils.pauseForDemo();
-
+        // Highlight the element for demo
+        highlightElement(js, select_colors_element);
+        // Pause to visually observe the demo
+        pauseForDemo();
         select_colors.selectByVisibleText("Blue");
+        // Pause to visually observe the demo before making selection
+        pauseForDemo();
         select_colors.selectByValue("white");
+        // Pause to visually observe the demo before making selection
+        pauseForDemo();
         select_colors.selectByIndex(3);
+        // Pause to visually observe the demo before making selection
+        pauseForDemo();
 
         List<WebElement> selectedOptions = select_colors.getAllSelectedOptions();
         List<String> actualOptions = new ArrayList<>();

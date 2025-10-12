@@ -4,6 +4,7 @@ import java.time.Duration;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -29,6 +30,14 @@ public class BaseTest {
 		js.executeScript("document.body.style.zoom='65%';");
 		act = new Actions(driver);
 		wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+	}
+	
+	public void pauseForDemo() throws InterruptedException {
+		Thread.sleep(3000);
+	}
+	
+	public void highlightElement(JavascriptExecutor js, WebElement element) {
+        js.executeScript("arguments[0].setAttribute('style', arguments[1]);", element, "border: 2px solid red; background: yellow;");
 	}
 	
 	@AfterMethod

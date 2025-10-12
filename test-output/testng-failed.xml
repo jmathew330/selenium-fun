@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Selenium Fun Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Core Selenium Tests - Locators(failed)">
-    <parameter name="url" value="https://testautomationpractice.blogspot.com"/>
+  <test thread-count="5" name="Core Selenium Tests - Radio Buttons(failed)">
+    <parameter name="url" value="https://the-internet.herokuapp.com/checkboxes"/>
     <classes>
-      <class name="core.LocatorsTest">
+      <class name="core.RadioButtonsTests">
         <methods>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="locateById"/>
-          <include name="locateByName"/>
+          <include name="selectOtherRadioButtonTest"/>
+          <include name="verifyDisabledRadioButtonTest"/>
+          <include name="selectRadioButtonTest"/>
         </methods>
-      </class> <!-- core.LocatorsTest -->
+      </class> <!-- core.RadioButtonsTests -->
     </classes>
-  </test> <!-- Core Selenium Tests - Locators(failed) -->
+  </test> <!-- Core Selenium Tests - Radio Buttons(failed) -->
 </suite> <!-- Failed suite [Selenium Fun Suite] -->

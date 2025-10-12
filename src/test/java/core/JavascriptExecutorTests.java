@@ -10,38 +10,53 @@ import base.BaseTest;
 import io.qameta.allure.*;
 import utils.JavascriptExecutorTestsUtils;
 
+/**
+ * JavascriptExecutorTests demonstrates how to use Selenium's JavaScriptExecutor 
+ * for advanced web interactions that are not easily achievable with standard WebDriver commands.
+ * 
+ * The class covers:
+ * 1. Scrolling: Scrolls the page vertically by pixels, to the bottom, and back to the top.
+ * 2. Clicking elements: Performs a click via JavaScript on a button and verifies the resulting message.
+ * 3. Setting and retrieving input values: Populates form fields using JS, submits the form, 
+ *    retrieves values from the output table, and validates that the entered data matches expectations.
+ * 
+ * These tests highlight the ability to execute JavaScript directly within the browser context, 
+ * providing control over actions such as dynamic clicks, form manipulation, and scrolling, 
+ * which are useful when standard WebDriver actions are insufficient.
+ */
 
+@Epic("Core Selenium Tests")
+@Feature("JavaScript Executor Module")
 public class JavascriptExecutorTests extends BaseTest {
 
-	@Epic("Core Selenium Tests")
-	@Feature("JavaScript Executor Module")
     @Story("Scroll vertically and verify page movement")
     @Test(description = "Scrolls page up and down using JS commands")
     @Severity(SeverityLevel.MINOR)
     @Description("Uses JavaScriptExecutor to scroll down, scroll to bottom, and return to top of the page.")
     public void scrollTest() throws InterruptedException {
 
-        // Pause for demo purposes
-        JavascriptExecutorTestsUtils.pauseForDemo();
+        // Pause to visually observe the demo
+        pauseForDemo();
 
         // Scroll down by 200 pixels
         js.executeScript("window.scrollBy(0, 200);");
 
-        JavascriptExecutorTestsUtils.pauseForDemo();
+        // Pause to visually observe the demo
+        pauseForDemo();
 
         // Scroll to the bottom of the page
         js.executeScript("window.scrollTo(0, document.body.scrollHeight);");
 
-        JavascriptExecutorTestsUtils.pauseForDemo();
+        // Pause to visually observe the demo
+        pauseForDemo();
 
         // Scroll back to the top
         js.executeScript("window.scrollTo(0,0);");
 
-        JavascriptExecutorTestsUtils.pauseForDemo();
+        // Pause to visually observe the demo
+        pauseForDemo();
     }
 	
-	@Epic("Core Selenium Tests")
-	@Feature("JavaScript Executor Module")
     @Story("Click elements using JavaScriptExecutor")
     @Test(description = "Clicks a button using JS and verifies success message")
     @Severity(SeverityLevel.CRITICAL)
@@ -51,13 +66,14 @@ public class JavascriptExecutorTests extends BaseTest {
         // Open demo site with button click functionality
         JavascriptExecutorTestsUtils.openDemoQASite(driver, js);
 
-        JavascriptExecutorTestsUtils.pauseForDemo();
-
         // Locate the 'Click Me' button
         WebElement button_ClickMe = driver.findElement(By.xpath("(//button[normalize-space()='Click Me'])"));
 
         // Click the button using JS
         js.executeScript("arguments[0].click();", button_ClickMe);
+        
+        // Pause to visually observe the demo
+        pauseForDemo();
 
         // Locate and verify success message
         WebElement p_message = driver.findElement(By.id("dynamicClickMessage"));
@@ -67,8 +83,6 @@ public class JavascriptExecutorTests extends BaseTest {
         Assert.assertTrue(p_message_text.contains("You have done a dynamic click"));
     }
 	
-	@Epic("Core Selenium Tests")
-	@Feature("JavaScript Executor Module")
     @Story("Set and verify input field values using JavaScriptExecutor")
     @Test(description = "Fills form using JS, submits, and validates entered data")
     @Severity(SeverityLevel.BLOCKER)
@@ -101,6 +115,9 @@ public class JavascriptExecutorTests extends BaseTest {
 
         // Click the submit button via JS
         js.executeScript("arguments[0].click();", button_submit);
+        
+        // Pause to visually observe the demo
+        pauseForDemo();
 
         // Retrieve field values via JS
         String input_firstName_value = (String) js.executeScript("return arguments[0].value;", input_firstName);
