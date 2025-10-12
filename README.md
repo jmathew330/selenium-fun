@@ -49,6 +49,7 @@ src/
     │       ├── KeyboardActionsTests.java
     │       ├── JavascriptExecutorTests.java
     │       ├── ScreenshotsTests.java
+    │       ├── DropdownsTests.java    
     │       ├── CheckboxesTests.java
     │       └── RadioButtonsTests.java
 ```
@@ -99,13 +100,19 @@ src/
 
 ### 9. ScreenshotsTests
 - **Full Page Screenshot:** Captures the entire webpage  
-- **Element Screenshot:** Captures a specific element (e.g., logo)  
+- **Element Screenshot:** Captures a specific element (e.g., logo)
 
-### 10. CheckboxesTests
+### 10. DropdownsTests
+- **Select by Visible Text:** Selects 'Brazil' from a single-selection dropdown and verifies selection  
+- **Select by Value:** Selects 'France' from a single-selection dropdown by value and validates it  
+- **Select by Index:** Selects 'India' from a single-selection dropdown by index and verifies selection  
+- **Select Multiple Options:** Selects multiple options ('Blue', 'White', 'Yellow') from a multi-select dropdown and validates all selections  
+
+### 11. CheckboxesTests
 - **Single Checkbox Test:** Selects and validates one checkbox  
 - **Multiple Checkboxes Test:** Selects multiple checkboxes, validates, and deselects one  
 
-### 11. RadioButtonsTests
+### 12. RadioButtonsTests
 - **Select 'Yes' Radio Button:** Verifies selection and confirmation message  
 - **Select 'Impressive' Radio Button:** Verifies selection and confirmation message  
 - **Verify Disabled 'No' Radio Button:** Confirms it is not clickable  
