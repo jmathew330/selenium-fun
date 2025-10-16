@@ -1,7 +1,6 @@
 package core;
 
 import org.testng.annotations.Test;
-
 import base.BaseTest;
 import io.qameta.allure.Description;
 import io.qameta.allure.Epic;
@@ -9,7 +8,7 @@ import io.qameta.allure.Feature;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import io.qameta.allure.Story;
-import utils.FramesTestsUtils;
+import pages.FramesPage;
 
 /**
  * FramesTests demonstrates how to interact with HTML frames using Selenium WebDriver.
@@ -29,6 +28,8 @@ import utils.FramesTestsUtils;
 @Epic("Core Selenium Tests")
 @Feature("Frames Module")
 public class FramesTests extends BaseTest {
+	
+	FramesPage fp;
 
 
 	@Story("Switch to frame 1 and enter text")
@@ -37,7 +38,18 @@ public class FramesTests extends BaseTest {
 	@Description("Switches to frame 1, enters text, and verifies it was entered correctly")
     public void frame1Test() throws InterruptedException {
 		
-		FramesTestsUtils.enterTextInFrame(driver, "frame_1", "mytext1", "I am on frame 1");
+		// Initialize the FramesPage object with driver
+		fp = new FramesPage(driver);
+		
+		// Switch to frame 1
+		fp.switchToFrame1();
+		
+		// Enter text into the frame
+		fp.sendKeysToFrame("I am on frame 1");
+		
+		// Return to the main page content
+		fp.switchToDefaultContent();
+		
         // Pause to visually observe the demo
         pauseForDemo();
     }
@@ -48,7 +60,18 @@ public class FramesTests extends BaseTest {
 	@Description("Switches to frame 2, enters text, and verifies it was entered correctly")
     public void frame2Test() throws InterruptedException {
 		
-		FramesTestsUtils.enterTextInFrame(driver, "frame_2", "mytext2", "I am on frame 2");
+		// Initialize the FramesPage object with driver
+		fp = new FramesPage(driver);
+		
+		//Switch to frame 2
+		fp.switchToFrame2();
+		
+		//Enter text into frame
+		fp.sendKeysToFrame("I am on frame 2");
+		
+		//Return to the main page content
+		fp.switchToDefaultContent();
+		
         // Pause to visually observe the demo
         pauseForDemo();
     }
@@ -59,7 +82,18 @@ public class FramesTests extends BaseTest {
 	@Description("Switches to frame 3, enters text, and verifies it was entered correctly")
     public void frame3Test() throws InterruptedException {
 		
-		FramesTestsUtils.enterTextInFrame(driver, "frame_3", "mytext3", "I am on frame 3");
+		// Initialize the FramesPage object with driver
+		fp = new FramesPage(driver);
+		
+		//Switch to frame 3
+		fp.switchToFrame3();
+		
+		//Enter text into frame
+		fp.sendKeysToFrame("I am on frame 3");
+		
+		//Return to the main page content
+		fp.switchToDefaultContent();
+		
         // Pause to visually observe the demo
         pauseForDemo();
     }
@@ -70,7 +104,18 @@ public class FramesTests extends BaseTest {
 	@Description("Switches to frame 4, enters text, and verifies it was entered correctly")
     public void frame4Test() throws InterruptedException {
 		
-		FramesTestsUtils.enterTextInFrame(driver, "frame_4", "mytext4", "I am on frame 4");
+		// Initialize the FramesPage object with driver
+		fp = new FramesPage(driver);
+		
+		//Switch to frame 4
+		fp.switchToFrame4();
+		
+		//Enter text into frame
+		fp.sendKeysToFrame("I am on frame 4");
+		
+		//Return to the main page content
+		fp.switchToDefaultContent();
+		
         // Pause to visually observe the demo
         pauseForDemo();
     }
@@ -81,7 +126,18 @@ public class FramesTests extends BaseTest {
 	@Description("Switches to frame 5, enters text, and verifies it was entered correctly")
     public void frame5Test() throws InterruptedException {
 		
-		FramesTestsUtils.enterTextInFrame(driver, "frame_5", "mytext5", "I am on frame 5");
+		// Initialize the FramesPage object with driver
+		fp = new FramesPage(driver);
+		
+		//Switch to frame 5
+		fp.switchToFrame5();
+		
+		//Enter text into frame
+		fp.sendKeysToFrame("I am on frame 5");
+		
+		//Return to the main page content
+		fp.switchToDefaultContent();
+
         // Pause to visually observe the demo
         pauseForDemo();
     }

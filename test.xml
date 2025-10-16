@@ -3,6 +3,15 @@
 
 <suite name="Selenium Fun Suite">
 
+    <!-- ========================== -->
+    <!-- 🔍 Locators Tests -->
+    <!-- ========================== -->
+    <test name="Core Selenium Tests - Locators">
+        <parameter name="url" value="https://testautomationpractice.blogspot.com" />
+        <classes>
+            <class name="core.LocatorsTests" />
+        </classes>
+    </test>
 
     <!-- ========================== -->
     <!-- ⏱ Waits Tests -->
@@ -11,6 +20,96 @@
         <parameter name="url" value="https://the-internet.herokuapp.com/dynamic_loading/1" />
         <classes>
             <class name="core.WaitsTests" />
+        </classes>
+    </test>
+
+    <!-- ========================== -->
+    <!-- ⚠️ Alerts Tests -->
+    <!-- ========================== -->
+    <test name="Core Selenium Tests - Alerts">
+        <parameter name="url" value="https://the-internet.herokuapp.com/javascript_alerts" />
+        <classes>
+            <class name="core.AlertsTests" />
+        </classes>
+    </test>
+
+    <!-- ========================== -->
+    <!-- 🪟 Frames Tests -->
+    <!-- ========================== -->
+    <test name="Core Selenium Tests - Frames">
+        <parameter name="url" value="https://ui.vision/demo/webtest/frames" />
+        <classes>
+            <class name="core.FramesTests" />
+        </classes>
+    </test>
+
+    <!-- ========================== -->
+    <!-- 🔄 Windows Tests -->
+    <!-- ========================== -->
+    <test name="Core Selenium Tests - Windows">
+        <parameter name="url" value="https://the-internet.herokuapp.com/windows" />
+        <classes>
+            <class name="core.WindowsTest" />
+        </classes>
+    </test>
+
+    <!-- ========================== -->
+    <!-- 🖱 Mouse Actions Tests -->
+    <!-- ========================== -->
+    <test name="Core Selenium Tests - Mouse Actions">
+        <parameter name="url" value="https://vinothqaacademy.com/mouse-event" />
+        <classes>
+            <class name="core.MouseActionsTests" />
+        </classes>
+    </test>
+
+    <!-- ========================== -->
+    <!-- ⌨️ Keyboard Actions Tests -->
+    <!-- ========================== -->
+    <test name="Core Selenium Tests - Keyboard Actions">
+        <parameter name="url" value="https://the-internet.herokuapp.com/key_presses" />
+        <classes>
+            <class name="core.KeyboardActionsTests" />
+        </classes>
+    </test>
+
+    <!-- ========================== -->
+    <!-- 📸 Screenshots Tests -->
+    <!-- ========================== -->
+    <test name="Core Selenium Tests - Screenshots">
+        <parameter name="url" value="https://demoqa.com/" />
+        <classes>
+            <class name="core.ScreenshotsTests" />
+        </classes>
+    </test>
+
+    <!-- ========================== -->
+    <!-- 🔽 Dropdowns Tests -->
+    <!-- ========================== -->
+    <test name="Core Selenium Tests - Dropdowns">
+        <parameter name="url" value="https://testautomationpractice.blogspot.com/" />
+        <classes>
+            <class name="core.DropdownsTests" />
+        </classes>
+    </test>
+
+    <!-- ========================== -->
+    <!-- ☑️ Checkboxes Tests -->
+    <!-- ========================== -->
+    <test name="Core Selenium Tests - Checkboxes">
+        <parameter name="url" value="https://the-internet.herokuapp.com/checkboxes" />
+        <classes>
+            <class name="core.CheckboxesTests" />
+        </classes>
+    </test>
+
+    <!-- ========================== -->
+    <!-- 🎯 Radio Buttons Tests -->
+    <!-- ========================== -->
+    <test name="Core Selenium Tests - Radio Buttons">
+        <parameter name="url" value="https://demoqa.com/radio-button" />
+        <classes>
+            <class name="core.RadioButtonsTests" />
         </classes>
     </test>
 

@@ -1,11 +1,8 @@
 package core;
 
-import org.openqa.selenium.Alert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import base.BaseTest;
 import io.qameta.allure.Description;
 import io.qameta.allure.Epic;
@@ -13,6 +10,7 @@ import io.qameta.allure.Feature;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import io.qameta.allure.Story;
+import pages.AlertsPage;
 
 /**
  * AlertsTests demonstrates handling of different types of JavaScript alerts
@@ -35,38 +33,43 @@ import io.qameta.allure.Story;
 @Epic("Core Selenium Tests")
 @Feature("Alerts Module")
 public class AlertsTests extends BaseTest {
+	
+AlertsPage ap;
+
 
     @Story("Verify simple alert behavior")
     @Test(description = "Verify simple alert text and result after accepting")
     @Severity(SeverityLevel.CRITICAL)
     @Description("Test handles a simple JavaScript alert: verifies its text and the page result after accepting it")
     public void simpleAlertTest() throws InterruptedException {
+    	
+    	//Initialize the AlertsPage object with driver
+		ap = new AlertsPage(driver);
 		
-        // Locate the button that triggers the simple alert
-        WebElement button_SimpleAlert = driver.findElement(By.xpath("//button[@onclick='jsAlert()']"));
         // Pause to visually observe the demo
         pauseForDemo();
-        button_SimpleAlert.click();
+        
+        //Click the button that triggers the simple alert
+        ap.click_button_SimpleAlert();
 
         // Switch focus to the alert
-        Alert alert_simple = driver.switchTo().alert();
+        ap.switchToAlert();
+     
         // Pause to visually observe the demo
         pauseForDemo();
-        // Capture alert text
-        String alert_simple_text = alert_simple.getText();
+        
         // Assertion: Verify alert displays the correct message
-        Assert.assertTrue(alert_simple_text.contains("I am a JS Alert"), 
-                "Alert text mismatch for simple alert");
+        Assert.assertTrue(ap.getAlertText().contains("I am a JS Alert"), "Alert text mismatch for simple alert");
 
         // Accept the alert
-        alert_simple.accept();
-
-        // Capture the result text displayed on the page
-        WebElement p_result = driver.findElement(By.id("result"));
-        String p_result_text = p_result.getText();
+        ap.acceptAlert();
+        
+        // Pause to visually observe the demo
+        pauseForDemo();
+       
         // Assertion: Verify page shows expected result message after accepting alert
-        Assert.assertTrue(p_result_text.contains("You successfully clicked an alert"), 
-                "Result text mismatch for simple alert");
+        Assert.assertTrue(ap.get_p_result_Text().contains("You successfully clicked an alert"), "Result text mismatch for simple alert");
+
     }
 	
     @Story("Verify confirmation alert behavior")
@@ -75,68 +78,70 @@ public class AlertsTests extends BaseTest {
     @Description("Test handles a JavaScript confirmation alert: verifies alert text and the page result after dismissing it")
     public void confirmationAlertTest() throws InterruptedException {
 		
-        // Locate the button that triggers the confirmation alert
-        WebElement button_ConfirmAlert = driver.findElement(By.xpath("//button[@onclick='jsConfirm()']"));
+    	//Initialize the AlertsPage object with driver
+    	ap = new AlertsPage(driver);
+		
         // Pause to visually observe the demo
         pauseForDemo();
-        button_ConfirmAlert.click();
+        
+        //Click the button that triggers the confirmation alert
+        ap.clickButton_ConfirmAlert();
 
         // Switch focus to the alert
-        Alert alert_confirm = driver.switchTo().alert();
+        ap.switchToAlert();
+        
         // Pause to visually observe the demo
         pauseForDemo();
-
-        // Capture alert text
-        String alert_confirm_text = alert_confirm.getText();
+        
         // Assertion: Verify alert displays the correct confirmation message
-        Assert.assertTrue(alert_confirm_text.contains("I am a JS Confirm"), 
-                "Alert text mismatch for confirmation alert");
-
+        Assert.assertTrue(ap.getAlertText().contains("I am a JS Confirm"), "Alert text mismatch for confirmation alert");
+        
         // Dismiss the alert (simulate clicking 'Cancel')
-        alert_confirm.dismiss();
-
-        // Capture the result text displayed on the page
-        WebElement p_result = driver.findElement(By.id("result"));
-        String p_result_text = p_result.getText();
+        ap.dismissAlert();
+        
+        // Pause to visually observe the demo
+        pauseForDemo();
+        
         // Assertion: Verify page shows correct result message after dismissing alert
-        Assert.assertTrue(p_result_text.contains("You clicked: Cancel"), 
-                "Result text mismatch for confirmation alert");
+        Assert.assertTrue(ap.get_p_result_Text().contains("You clicked: Cancel"), "Result text mismatch for confirmation alert");
+        
     }
-	
+    
     @Story("Verify prompt alert behavior")
     @Test(description = "Verify prompt alert text, enter input, and check result")
     @Severity(SeverityLevel.CRITICAL)
     @Description("Test handles a JavaScript prompt alert: enters text, verifies alert text, and the page result")
     public void promptAlertTest() throws InterruptedException {
+    	
+    	//Initialize the AlertsPage object with driver
+		ap = new AlertsPage(driver);
 		
-        // Locate the button that triggers the prompt alert
-        WebElement button_PromptAlert = driver.findElement(By.xpath("//button[@onclick='jsPrompt()']"));
+		// Click the button that triggers the prompt alert
+    	ap.clickButton_PromptAlert();
+    	
         // Pause to visually observe the demo
         pauseForDemo();
-        button_PromptAlert.click();
 
         // Switch focus to the alert
-        Alert alert_prompt = driver.switchTo().alert();
+        ap.switchToAlert();
+        
         // Pause to visually observe the demo
         pauseForDemo();
-
+        
         // Enter text into the prompt alert
-        alert_prompt.sendKeys("Testing is fun");
-
-        // Capture alert text
-        String alert_prompt_text = alert_prompt.getText();
+        ap.sendKeysToAlert("Testing is fun");
+        
         // Assertion: Verify prompt displays correct message
-        Assert.assertTrue(alert_prompt_text.contains("I am a JS prompt"), 
-                "Alert text mismatch for prompt alert");
+        Assert.assertTrue(ap.getAlertText().contains("I am a JS prompt"), "Alert text mismatch for prompt alert");
 
         // Accept the prompt alert
-        alert_prompt.accept();
-
-        // Capture the result text displayed on the page
-        WebElement p_result = driver.findElement(By.id("result"));
-        String p_result_text = p_result.getText();
+        ap.acceptAlert();
+        
+        // Pause to visually observe the demo
+        pauseForDemo();
+        
         // Assertion: Verify page shows the text entered in the prompt
-        Assert.assertTrue(p_result_text.contains("You entered: Testing is fun"), 
-                "Result text mismatch for prompt alert");
+        Assert.assertTrue(ap.get_p_result_Text().contains("You entered: Testing is fun"), "Result text mismatch for prompt alert");
+
     }
 }

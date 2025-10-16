@@ -1,10 +1,6 @@
 package core;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Set;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import base.BaseTest;
@@ -14,6 +10,7 @@ import io.qameta.allure.Feature;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import io.qameta.allure.Story;
+import pages.WindowsPage;
 
 /**
  * WindowsTest demonstrates handling multiple browser windows or tabs using Selenium WebDriver.
@@ -34,7 +31,7 @@ import io.qameta.allure.Story;
 @Feature("Window Handling Module")
 public class WindowsTest extends BaseTest {
 
-	
+	WindowsPage wp;
 
 	@Story("Switch to new window and verify title")
 	@Test(description = "Click a link to open a new window, switch to it, verify title, and close it")
@@ -42,25 +39,20 @@ public class WindowsTest extends BaseTest {
 	@Description("Clicks a link that opens a new window, switches to it, verifies its title, and closes it")
     public void windowsTest() throws InterruptedException {
         
-		// Locate the link that opens a new window
-        WebElement a_ClickHere = driver.findElement(By.linkText("Click Here"));
+		// Initialize the WindowsPage object with driver
+		wp = new WindowsPage(driver);
         
+		// Store the handle of the current (original) window before opening a new one
+        String originalWindow = driver.getWindowHandle();
+
         // Click the link to open a new window
-        a_ClickHere.click();
+		wp.click_a_ClickHere();
         
         // Pause to visually observe the demo
         pauseForDemo();
         
-        //Store the original window handle
-        String originalWindow = driver.getWindowHandle();
-        
-        // Retrieve all window handles
-        Set<String> allWindowsSet = driver.getWindowHandles();
-       
-        List<String> allWindows = new ArrayList<String>(allWindowsSet);
-        
-        //Switch to the new window (index 1)
-        driver.switchTo().window(allWindows.get(1));
+        //Switch to the new window
+        wp.switchToNewWindow(originalWindow);
         
         // Pause to visually observe the demo
         pauseForDemo();
@@ -72,13 +64,13 @@ public class WindowsTest extends BaseTest {
         Assert.assertTrue(driver.getCurrentUrl().contains("new"));
         
         // Close the new window
-        driver.close();
+        wp.closeWindow();
         
         // Pause to visually observe the demo
         pauseForDemo();
         
         // Switch back to the original window
-        driver.switchTo().window(originalWindow);
+        wp.switchToOriginalWindow(originalWindow);
         
         // Assertion: Verify the title of the original window
         Assert.assertEquals(driver.getTitle(), "The Internet", "New window title mismatch!");

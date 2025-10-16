@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="39" passed="39" failed="0" skipped="0">
+<testng-results ignored="0" total="36" passed="36" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-10-12T15:00:36 EDT" name="Selenium Fun Suite" finished-at="2025-10-12T15:07:54 EDT" duration-ms="437406">
+  <suite started-at="2025-10-16T14:17:56 EDT" name="Selenium Fun Suite" finished-at="2025-10-16T14:24:50 EDT" duration-ms="414119">
     <groups>
     </groups>
-    <test started-at="2025-10-12T15:00:36 EDT" name="Core Selenium Tests - Locators" finished-at="2025-10-12T15:01:48 EDT" duration-ms="71263">
+    <test started-at="2025-10-16T14:17:56 EDT" name="Core Selenium Tests - Locators" finished-at="2025-10-16T14:18:54 EDT" duration-ms="57784">
       <class name="core.LocatorsTests">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.LocatorsTests@7486b455]" started-at="2025-10-12T15:00:36 EDT" name="setup" finished-at="2025-10-12T15:00:42 EDT" duration-ms="5811" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.LocatorsTests@7486b455]" started-at="2025-10-16T14:17:56 EDT" name="setup" finished-at="2025-10-16T14:18:03 EDT" duration-ms="7005" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,15 +18,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="locateByClassName()[pri:0, instance:core.LocatorsTests@7486b455]" started-at="2025-10-12T15:00:42 EDT" name="locateByClassName" description="Locate heading using &#039;className&#039;, verify visibility and text" finished-at="2025-10-12T15:00:46 EDT" duration-ms="3181" status="PASS">
+        <test-method signature="locateByClassName()[pri:0, instance:core.LocatorsTests@7486b455]" started-at="2025-10-16T14:18:04 EDT" name="locateByClassName" description="Locate heading using &#039;className&#039;, verify visibility and text" finished-at="2025-10-16T14:18:07 EDT" duration-ms="3396" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- locateByClassName -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.LocatorsTests@7486b455]" started-at="2025-10-12T15:00:46 EDT" name="tearDown" finished-at="2025-10-12T15:00:46 EDT" duration-ms="220" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.LocatorsTests@7486b455]" started-at="2025-10-16T14:18:07 EDT" name="tearDown" finished-at="2025-10-16T14:18:07 EDT" duration-ms="217" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.LocatorsTests@7486b455]" started-at="2025-10-12T15:00:46 EDT" name="setup" finished-at="2025-10-12T15:00:50 EDT" duration-ms="3785" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.LocatorsTests@7486b455]" started-at="2025-10-16T14:18:07 EDT" name="setup" finished-at="2025-10-16T14:18:11 EDT" duration-ms="3568" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,15 +37,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="locateByCssSelector()[pri:0, instance:core.LocatorsTests@7486b455]" started-at="2025-10-12T15:00:50 EDT" name="locateByCssSelector" description="Locate input using CSS selector, verify visibility and type attribute" finished-at="2025-10-12T15:00:53 EDT" duration-ms="3280" status="PASS">
+        <test-method signature="locateByCssSelector()[pri:0, instance:core.LocatorsTests@7486b455]" started-at="2025-10-16T14:18:11 EDT" name="locateByCssSelector" description="Locate input using CSS selector, verify visibility and type attribute" finished-at="2025-10-16T14:18:14 EDT" duration-ms="3381" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- locateByCssSelector -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.LocatorsTests@7486b455]" started-at="2025-10-12T15:00:53 EDT" name="tearDown" finished-at="2025-10-12T15:00:53 EDT" duration-ms="208" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.LocatorsTests@7486b455]" started-at="2025-10-16T14:18:14 EDT" name="tearDown" finished-at="2025-10-16T14:18:14 EDT" duration-ms="210" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.LocatorsTests@7486b455]" started-at="2025-10-12T15:00:53 EDT" name="setup" finished-at="2025-10-12T15:01:02 EDT" duration-ms="8412" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.LocatorsTests@7486b455]" started-at="2025-10-16T14:18:14 EDT" name="setup" finished-at="2025-10-16T14:18:23 EDT" duration-ms="8227" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -56,15 +56,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="locateById()[pri:0, instance:core.LocatorsTests@7486b455]" started-at="2025-10-12T15:01:02 EDT" name="locateById" description="Locate input field using &#039;id&#039;, verify visibility and placeholder text" finished-at="2025-10-12T15:01:05 EDT" duration-ms="3284" status="PASS">
+        <test-method signature="locateById()[pri:0, instance:core.LocatorsTests@7486b455]" started-at="2025-10-16T14:18:23 EDT" name="locateById" description="Locate input field using &#039;id&#039;, verify visibility and placeholder text" finished-at="2025-10-16T14:18:26 EDT" duration-ms="3337" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- locateById -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.LocatorsTests@7486b455]" started-at="2025-10-12T15:01:05 EDT" name="tearDown" finished-at="2025-10-12T15:01:05 EDT" duration-ms="200" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.LocatorsTests@7486b455]" started-at="2025-10-16T14:18:26 EDT" name="tearDown" finished-at="2025-10-16T14:18:26 EDT" duration-ms="195" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.LocatorsTests@7486b455]" started-at="2025-10-12T15:01:05 EDT" name="setup" finished-at="2025-10-12T15:01:12 EDT" duration-ms="6700" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.LocatorsTests@7486b455]" started-at="2025-10-16T14:18:26 EDT" name="setup" finished-at="2025-10-16T14:18:30 EDT" duration-ms="3668" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -75,15 +75,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="locateByLinkText()[pri:0, instance:core.LocatorsTests@7486b455]" started-at="2025-10-12T15:01:12 EDT" name="locateByLinkText" description="Locate link using &#039;linkText&#039;, verify visibility and text" finished-at="2025-10-12T15:01:15 EDT" duration-ms="3247" status="PASS">
+        <test-method signature="locateByLinkText()[pri:0, instance:core.LocatorsTests@7486b455]" started-at="2025-10-16T14:18:30 EDT" name="locateByLinkText" description="Locate link using &#039;linkText&#039;, verify visibility and text" finished-at="2025-10-16T14:18:33 EDT" duration-ms="3145" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- locateByLinkText -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.LocatorsTests@7486b455]" started-at="2025-10-12T15:01:15 EDT" name="tearDown" finished-at="2025-10-12T15:01:15 EDT" duration-ms="197" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.LocatorsTests@7486b455]" started-at="2025-10-16T14:18:33 EDT" name="tearDown" finished-at="2025-10-16T14:18:33 EDT" duration-ms="195" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.LocatorsTests@7486b455]" started-at="2025-10-12T15:01:15 EDT" name="setup" finished-at="2025-10-12T15:01:24 EDT" duration-ms="8528" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.LocatorsTests@7486b455]" started-at="2025-10-16T14:18:33 EDT" name="setup" finished-at="2025-10-16T14:18:37 EDT" duration-ms="3554" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -94,15 +94,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="locateByName()[pri:0, instance:core.LocatorsTests@7486b455]" started-at="2025-10-12T15:01:24 EDT" name="locateByName" description="Locate button using &#039;name&#039;, verify visibility and text" finished-at="2025-10-12T15:01:27 EDT" duration-ms="3433" status="PASS">
+        <test-method signature="locateByName()[pri:0, instance:core.LocatorsTests@7486b455]" started-at="2025-10-16T14:18:37 EDT" name="locateByName" description="Locate button using &#039;name&#039;, verify visibility and text" finished-at="2025-10-16T14:18:40 EDT" duration-ms="3093" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- locateByName -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.LocatorsTests@7486b455]" started-at="2025-10-12T15:01:27 EDT" name="tearDown" finished-at="2025-10-12T15:01:27 EDT" duration-ms="198" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.LocatorsTests@7486b455]" started-at="2025-10-16T14:18:40 EDT" name="tearDown" finished-at="2025-10-16T14:18:40 EDT" duration-ms="142" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.LocatorsTests@7486b455]" started-at="2025-10-12T15:01:27 EDT" name="setup" finished-at="2025-10-12T15:01:37 EDT" duration-ms="9098" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.LocatorsTests@7486b455]" started-at="2025-10-16T14:18:40 EDT" name="setup" finished-at="2025-10-16T14:18:44 EDT" duration-ms="3693" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -113,15 +113,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="locateByPartialLinkText()[pri:0, instance:core.LocatorsTests@7486b455]" started-at="2025-10-12T15:01:37 EDT" name="locateByPartialLinkText" description="Locate link using &#039;partialLinkText&#039;, verify visibility and text" finished-at="2025-10-12T15:01:40 EDT" duration-ms="3278" status="PASS">
+        <test-method signature="locateByPartialLinkText()[pri:0, instance:core.LocatorsTests@7486b455]" started-at="2025-10-16T14:18:44 EDT" name="locateByPartialLinkText" description="Locate link using &#039;partialLinkText&#039;, verify visibility and text" finished-at="2025-10-16T14:18:47 EDT" duration-ms="3094" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- locateByPartialLinkText -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.LocatorsTests@7486b455]" started-at="2025-10-12T15:01:40 EDT" name="tearDown" finished-at="2025-10-12T15:01:40 EDT" duration-ms="204" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.LocatorsTests@7486b455]" started-at="2025-10-16T14:18:47 EDT" name="tearDown" finished-at="2025-10-16T14:18:47 EDT" duration-ms="179" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.LocatorsTests@7486b455]" started-at="2025-10-12T15:01:40 EDT" name="setup" finished-at="2025-10-12T15:01:44 EDT" duration-ms="4215" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.LocatorsTests@7486b455]" started-at="2025-10-16T14:18:47 EDT" name="setup" finished-at="2025-10-16T14:18:51 EDT" duration-ms="3718" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -132,19 +132,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="locateByXPath()[pri:0, instance:core.LocatorsTests@7486b455]" started-at="2025-10-12T15:01:44 EDT" name="locateByXPath" description="Locate element using relative XPath, verify visibility and src attribute" finished-at="2025-10-12T15:01:47 EDT" duration-ms="3230" status="PASS">
+        <test-method signature="locateByXPath()[pri:0, instance:core.LocatorsTests@7486b455]" started-at="2025-10-16T14:18:51 EDT" name="locateByXPath" description="Locate element using relative XPath, verify visibility and src attribute" finished-at="2025-10-16T14:18:54 EDT" duration-ms="3219" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- locateByXPath -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.LocatorsTests@7486b455]" started-at="2025-10-12T15:01:47 EDT" name="tearDown" finished-at="2025-10-12T15:01:48 EDT" duration-ms="193" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.LocatorsTests@7486b455]" started-at="2025-10-16T14:18:54 EDT" name="tearDown" finished-at="2025-10-16T14:18:54 EDT" duration-ms="189" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- core.LocatorsTests -->
     </test> <!-- Core Selenium Tests - Locators -->
-    <test started-at="2025-10-12T15:01:48 EDT" name="Core Selenium Tests - Waits" finished-at="2025-10-12T15:02:19 EDT" duration-ms="30986">
+    <test started-at="2025-10-16T14:18:54 EDT" name="Core Selenium Tests - Waits" finished-at="2025-10-16T14:19:24 EDT" duration-ms="30142">
       <class name="core.WaitsTests">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.WaitsTests@6ca18a14]" started-at="2025-10-12T15:01:48 EDT" name="setup" finished-at="2025-10-12T15:01:51 EDT" duration-ms="3181" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.WaitsTests@6ca18a14]" started-at="2025-10-16T14:18:54 EDT" name="setup" finished-at="2025-10-16T14:18:57 EDT" duration-ms="3053" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -155,15 +155,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="explicitWaitTest()[pri:0, instance:core.WaitsTests@6ca18a14]" started-at="2025-10-12T15:01:51 EDT" name="explicitWaitTest" description="Demonstrate Explicit Wait" finished-at="2025-10-12T15:01:59 EDT" duration-ms="8397" status="PASS">
+        <test-method signature="explicitWaitTest()[pri:0, instance:core.WaitsTests@6ca18a14]" started-at="2025-10-16T14:18:57 EDT" name="explicitWaitTest" description="Demonstrate Explicit Wait" finished-at="2025-10-16T14:19:06 EDT" duration-ms="8451" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- explicitWaitTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.WaitsTests@6ca18a14]" started-at="2025-10-12T15:01:59 EDT" name="tearDown" finished-at="2025-10-12T15:01:59 EDT" duration-ms="202" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.WaitsTests@6ca18a14]" started-at="2025-10-16T14:19:06 EDT" name="tearDown" finished-at="2025-10-16T14:19:06 EDT" duration-ms="144" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.WaitsTests@6ca18a14]" started-at="2025-10-12T15:01:59 EDT" name="setup" finished-at="2025-10-12T15:02:03 EDT" duration-ms="3260" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.WaitsTests@6ca18a14]" started-at="2025-10-16T14:19:06 EDT" name="setup" finished-at="2025-10-16T14:19:09 EDT" duration-ms="2872" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -174,15 +174,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="fluentWaitTest()[pri:0, instance:core.WaitsTests@6ca18a14]" started-at="2025-10-12T15:02:03 EDT" name="fluentWaitTest" description="Demonstrate Fluent Wait" finished-at="2025-10-12T15:02:12 EDT" duration-ms="9278" status="PASS">
+        <test-method signature="fluentWaitTest()[pri:0, instance:core.WaitsTests@6ca18a14]" started-at="2025-10-16T14:19:09 EDT" name="fluentWaitTest" description="Demonstrate Fluent Wait" finished-at="2025-10-16T14:19:18 EDT" duration-ms="9255" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fluentWaitTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.WaitsTests@6ca18a14]" started-at="2025-10-12T15:02:12 EDT" name="tearDown" finished-at="2025-10-12T15:02:12 EDT" duration-ms="208" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.WaitsTests@6ca18a14]" started-at="2025-10-16T14:19:18 EDT" name="tearDown" finished-at="2025-10-16T14:19:18 EDT" duration-ms="273" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.WaitsTests@6ca18a14]" started-at="2025-10-12T15:02:12 EDT" name="setup" finished-at="2025-10-12T15:02:15 EDT" duration-ms="3202" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.WaitsTests@6ca18a14]" started-at="2025-10-16T14:19:18 EDT" name="setup" finished-at="2025-10-16T14:19:21 EDT" duration-ms="2854" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -193,19 +193,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="implicitWaitTest()[pri:0, instance:core.WaitsTests@6ca18a14]" started-at="2025-10-12T15:02:15 EDT" name="implicitWaitTest" description="Demonstrate Implicit Wait" finished-at="2025-10-12T15:02:18 EDT" duration-ms="3062" status="PASS">
+        <test-method signature="implicitWaitTest()[pri:0, instance:core.WaitsTests@6ca18a14]" started-at="2025-10-16T14:19:21 EDT" name="implicitWaitTest" description="Demonstrate Implicit Wait" finished-at="2025-10-16T14:19:24 EDT" duration-ms="3070" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- implicitWaitTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.WaitsTests@6ca18a14]" started-at="2025-10-12T15:02:18 EDT" name="tearDown" finished-at="2025-10-12T15:02:19 EDT" duration-ms="178" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.WaitsTests@6ca18a14]" started-at="2025-10-16T14:19:24 EDT" name="tearDown" finished-at="2025-10-16T14:19:24 EDT" duration-ms="143" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- core.WaitsTests -->
     </test> <!-- Core Selenium Tests - Waits -->
-    <test started-at="2025-10-12T15:02:19 EDT" name="Core Selenium Tests - Alerts" finished-at="2025-10-12T15:02:47 EDT" duration-ms="28497">
+    <test started-at="2025-10-16T14:19:24 EDT" name="Core Selenium Tests - Alerts" finished-at="2025-10-16T14:20:01 EDT" duration-ms="36909">
       <class name="core.AlertsTests">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.AlertsTests@19b843ba]" started-at="2025-10-12T15:02:19 EDT" name="setup" finished-at="2025-10-12T15:02:22 EDT" duration-ms="2981" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.AlertsTests@19b843ba]" started-at="2025-10-16T14:19:24 EDT" name="setup" finished-at="2025-10-16T14:19:27 EDT" duration-ms="2896" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -216,15 +216,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="confirmationAlertTest()[pri:0, instance:core.AlertsTests@19b843ba]" started-at="2025-10-12T15:02:22 EDT" name="confirmationAlertTest" description="Verify confirmation alert text and result after dismissing" finished-at="2025-10-12T15:02:28 EDT" duration-ms="6261" status="PASS">
+        <test-method signature="confirmationAlertTest()[pri:0, instance:core.AlertsTests@19b843ba]" started-at="2025-10-16T14:19:27 EDT" name="confirmationAlertTest" description="Verify confirmation alert text and result after dismissing" finished-at="2025-10-16T14:19:36 EDT" duration-ms="9253" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- confirmationAlertTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.AlertsTests@19b843ba]" started-at="2025-10-12T15:02:28 EDT" name="tearDown" finished-at="2025-10-12T15:02:28 EDT" duration-ms="200" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.AlertsTests@19b843ba]" started-at="2025-10-16T14:19:36 EDT" name="tearDown" finished-at="2025-10-16T14:19:37 EDT" duration-ms="159" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.AlertsTests@19b843ba]" started-at="2025-10-12T15:02:28 EDT" name="setup" finished-at="2025-10-12T15:02:31 EDT" duration-ms="2990" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.AlertsTests@19b843ba]" started-at="2025-10-16T14:19:37 EDT" name="setup" finished-at="2025-10-16T14:19:40 EDT" duration-ms="3068" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -235,15 +235,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="promptAlertTest()[pri:0, instance:core.AlertsTests@19b843ba]" started-at="2025-10-12T15:02:31 EDT" name="promptAlertTest" description="Verify prompt alert text, enter input, and check result" finished-at="2025-10-12T15:02:37 EDT" duration-ms="6292" status="PASS">
+        <test-method signature="promptAlertTest()[pri:0, instance:core.AlertsTests@19b843ba]" started-at="2025-10-16T14:19:40 EDT" name="promptAlertTest" description="Verify prompt alert text, enter input, and check result" finished-at="2025-10-16T14:19:49 EDT" duration-ms="9202" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- promptAlertTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.AlertsTests@19b843ba]" started-at="2025-10-12T15:02:37 EDT" name="tearDown" finished-at="2025-10-12T15:02:38 EDT" duration-ms="216" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.AlertsTests@19b843ba]" started-at="2025-10-16T14:19:49 EDT" name="tearDown" finished-at="2025-10-16T14:19:49 EDT" duration-ms="174" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.AlertsTests@19b843ba]" started-at="2025-10-12T15:02:38 EDT" name="setup" finished-at="2025-10-12T15:02:41 EDT" duration-ms="3089" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.AlertsTests@19b843ba]" started-at="2025-10-16T14:19:49 EDT" name="setup" finished-at="2025-10-16T14:19:52 EDT" duration-ms="2818" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -254,19 +254,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="simpleAlertTest()[pri:0, instance:core.AlertsTests@19b843ba]" started-at="2025-10-12T15:02:41 EDT" name="simpleAlertTest" description="Verify simple alert text and result after accepting" finished-at="2025-10-12T15:02:47 EDT" duration-ms="6231" status="PASS">
+        <test-method signature="simpleAlertTest()[pri:0, instance:core.AlertsTests@19b843ba]" started-at="2025-10-16T14:19:52 EDT" name="simpleAlertTest" description="Verify simple alert text and result after accepting" finished-at="2025-10-16T14:20:01 EDT" duration-ms="9176" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- simpleAlertTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.AlertsTests@19b843ba]" started-at="2025-10-12T15:02:47 EDT" name="tearDown" finished-at="2025-10-12T15:02:47 EDT" duration-ms="197" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.AlertsTests@19b843ba]" started-at="2025-10-16T14:20:01 EDT" name="tearDown" finished-at="2025-10-16T14:20:01 EDT" duration-ms="144" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- core.AlertsTests -->
     </test> <!-- Core Selenium Tests - Alerts -->
-    <test started-at="2025-10-12T15:02:47 EDT" name="Core Selenium Tests - Frames" finished-at="2025-10-12T15:03:25 EDT" duration-ms="37916">
+    <test started-at="2025-10-16T14:20:01 EDT" name="Core Selenium Tests - Frames" finished-at="2025-10-16T14:20:39 EDT" duration-ms="38243">
       <class name="core.FramesTests">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.FramesTests@928763c]" started-at="2025-10-12T15:02:47 EDT" name="setup" finished-at="2025-10-12T15:02:52 EDT" duration-ms="4608" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.FramesTests@928763c]" started-at="2025-10-16T14:20:01 EDT" name="setup" finished-at="2025-10-16T14:20:06 EDT" duration-ms="4563" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -277,15 +277,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="frame1Test()[pri:0, instance:core.FramesTests@928763c]" started-at="2025-10-12T15:02:52 EDT" name="frame1Test" description="Frame 1: Switch to frame and enter text" finished-at="2025-10-12T15:02:55 EDT" duration-ms="3396" status="PASS">
+        <test-method signature="frame1Test()[pri:0, instance:core.FramesTests@928763c]" started-at="2025-10-16T14:20:06 EDT" name="frame1Test" description="Frame 1: Switch to frame and enter text" finished-at="2025-10-16T14:20:09 EDT" duration-ms="3386" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- frame1Test -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.FramesTests@928763c]" started-at="2025-10-12T15:02:55 EDT" name="tearDown" finished-at="2025-10-12T15:02:55 EDT" duration-ms="259" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.FramesTests@928763c]" started-at="2025-10-16T14:20:09 EDT" name="tearDown" finished-at="2025-10-16T14:20:09 EDT" duration-ms="170" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.FramesTests@928763c]" started-at="2025-10-12T15:02:55 EDT" name="setup" finished-at="2025-10-12T15:02:59 EDT" duration-ms="3992" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.FramesTests@928763c]" started-at="2025-10-16T14:20:09 EDT" name="setup" finished-at="2025-10-16T14:20:13 EDT" duration-ms="3842" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -296,15 +296,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="frame2Test()[pri:0, instance:core.FramesTests@928763c]" started-at="2025-10-12T15:02:59 EDT" name="frame2Test" description="Frame 2: Switch to frame and enter text" finished-at="2025-10-12T15:03:03 EDT" duration-ms="3417" status="PASS">
+        <test-method signature="frame2Test()[pri:0, instance:core.FramesTests@928763c]" started-at="2025-10-16T14:20:13 EDT" name="frame2Test" description="Frame 2: Switch to frame and enter text" finished-at="2025-10-16T14:20:16 EDT" duration-ms="3266" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- frame2Test -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.FramesTests@928763c]" started-at="2025-10-12T15:03:03 EDT" name="tearDown" finished-at="2025-10-12T15:03:03 EDT" duration-ms="244" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.FramesTests@928763c]" started-at="2025-10-16T14:20:16 EDT" name="tearDown" finished-at="2025-10-16T14:20:17 EDT" duration-ms="194" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.FramesTests@928763c]" started-at="2025-10-12T15:03:03 EDT" name="setup" finished-at="2025-10-12T15:03:07 EDT" duration-ms="3534" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.FramesTests@928763c]" started-at="2025-10-16T14:20:17 EDT" name="setup" finished-at="2025-10-16T14:20:21 EDT" duration-ms="4187" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -315,15 +315,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="frame3Test()[pri:0, instance:core.FramesTests@928763c]" started-at="2025-10-12T15:03:07 EDT" name="frame3Test" description="Frame 3: Switch to frame and enter text" finished-at="2025-10-12T15:03:10 EDT" duration-ms="3291" status="PASS">
+        <test-method signature="frame3Test()[pri:0, instance:core.FramesTests@928763c]" started-at="2025-10-16T14:20:21 EDT" name="frame3Test" description="Frame 3: Switch to frame and enter text" finished-at="2025-10-16T14:20:24 EDT" duration-ms="3361" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- frame3Test -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.FramesTests@928763c]" started-at="2025-10-12T15:03:10 EDT" name="tearDown" finished-at="2025-10-12T15:03:10 EDT" duration-ms="221" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.FramesTests@928763c]" started-at="2025-10-16T14:20:24 EDT" name="tearDown" finished-at="2025-10-16T14:20:24 EDT" duration-ms="182" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.FramesTests@928763c]" started-at="2025-10-12T15:03:10 EDT" name="setup" finished-at="2025-10-12T15:03:14 EDT" duration-ms="3906" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.FramesTests@928763c]" started-at="2025-10-16T14:20:24 EDT" name="setup" finished-at="2025-10-16T14:20:28 EDT" duration-ms="4130" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -334,15 +334,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="frame4Test()[pri:0, instance:core.FramesTests@928763c]" started-at="2025-10-12T15:03:14 EDT" name="frame4Test" description="Frame 4: Switch to frame and enter text" finished-at="2025-10-12T15:03:17 EDT" duration-ms="3355" status="PASS">
+        <test-method signature="frame4Test()[pri:0, instance:core.FramesTests@928763c]" started-at="2025-10-16T14:20:28 EDT" name="frame4Test" description="Frame 4: Switch to frame and enter text" finished-at="2025-10-16T14:20:32 EDT" duration-ms="3386" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- frame4Test -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.FramesTests@928763c]" started-at="2025-10-12T15:03:17 EDT" name="tearDown" finished-at="2025-10-12T15:03:18 EDT" duration-ms="223" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.FramesTests@928763c]" started-at="2025-10-16T14:20:32 EDT" name="tearDown" finished-at="2025-10-16T14:20:32 EDT" duration-ms="191" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.FramesTests@928763c]" started-at="2025-10-12T15:03:18 EDT" name="setup" finished-at="2025-10-12T15:03:21 EDT" duration-ms="3748" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.FramesTests@928763c]" started-at="2025-10-16T14:20:32 EDT" name="setup" finished-at="2025-10-16T14:20:36 EDT" duration-ms="3887" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -353,19 +353,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="frame5Test()[pri:0, instance:core.FramesTests@928763c]" started-at="2025-10-12T15:03:21 EDT" name="frame5Test" description="Frame 5: Switch to frame and enter text" finished-at="2025-10-12T15:03:25 EDT" duration-ms="3438" status="PASS">
+        <test-method signature="frame5Test()[pri:0, instance:core.FramesTests@928763c]" started-at="2025-10-16T14:20:36 EDT" name="frame5Test" description="Frame 5: Switch to frame and enter text" finished-at="2025-10-16T14:20:39 EDT" duration-ms="3273" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- frame5Test -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.FramesTests@928763c]" started-at="2025-10-12T15:03:25 EDT" name="tearDown" finished-at="2025-10-12T15:03:25 EDT" duration-ms="246" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.FramesTests@928763c]" started-at="2025-10-16T14:20:39 EDT" name="tearDown" finished-at="2025-10-16T14:20:39 EDT" duration-ms="194" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- core.FramesTests -->
     </test> <!-- Core Selenium Tests - Frames -->
-    <test started-at="2025-10-12T15:03:25 EDT" name="Core Selenium Tests - Windows" finished-at="2025-10-12T15:03:38 EDT" duration-ms="12571">
+    <test started-at="2025-10-16T14:20:39 EDT" name="Core Selenium Tests - Windows" finished-at="2025-10-16T14:20:52 EDT" duration-ms="12396">
       <class name="core.WindowsTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.WindowsTest@19976a65]" started-at="2025-10-12T15:03:25 EDT" name="setup" finished-at="2025-10-12T15:03:28 EDT" duration-ms="3086" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.WindowsTest@19976a65]" started-at="2025-10-16T14:20:39 EDT" name="setup" finished-at="2025-10-16T14:20:42 EDT" duration-ms="2971" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -376,19 +376,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="windowsTest()[pri:0, instance:core.WindowsTest@19976a65]" started-at="2025-10-12T15:03:28 EDT" name="windowsTest" description="Click a link to open a new window, switch to it, verify title, and close it" finished-at="2025-10-12T15:03:37 EDT" duration-ms="9267" status="PASS">
+        <test-method signature="windowsTest()[pri:0, instance:core.WindowsTest@19976a65]" started-at="2025-10-16T14:20:42 EDT" name="windowsTest" description="Click a link to open a new window, switch to it, verify title, and close it" finished-at="2025-10-16T14:20:52 EDT" duration-ms="9247" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- windowsTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.WindowsTest@19976a65]" started-at="2025-10-12T15:03:37 EDT" name="tearDown" finished-at="2025-10-12T15:03:38 EDT" duration-ms="202" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.WindowsTest@19976a65]" started-at="2025-10-16T14:20:52 EDT" name="tearDown" finished-at="2025-10-16T14:20:52 EDT" duration-ms="166" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- core.WindowsTest -->
     </test> <!-- Core Selenium Tests - Windows -->
-    <test started-at="2025-10-12T15:03:38 EDT" name="Core Selenium Tests - Mouse Actions" finished-at="2025-10-12T15:04:19 EDT" duration-ms="41547">
+    <test started-at="2025-10-16T14:20:52 EDT" name="Core Selenium Tests - Mouse Actions" finished-at="2025-10-16T14:21:33 EDT" duration-ms="40858">
       <class name="core.MouseActionsTests">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.MouseActionsTests@5e17553a]" started-at="2025-10-12T15:03:38 EDT" name="setup" finished-at="2025-10-12T15:03:41 EDT" duration-ms="3724" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.MouseActionsTests@5e17553a]" started-at="2025-10-16T14:20:52 EDT" name="setup" finished-at="2025-10-16T14:20:56 EDT" duration-ms="4426" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -399,15 +399,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="doubleClickTest()[pri:0, instance:core.MouseActionsTests@5e17553a]" started-at="2025-10-12T15:03:41 EDT" name="doubleClickTest" description="Perform a double-click on the button and verify the result message" finished-at="2025-10-12T15:03:48 EDT" duration-ms="6234" status="PASS">
+        <test-method signature="doubleClickTest()[pri:0, instance:core.MouseActionsTests@5e17553a]" started-at="2025-10-16T14:20:56 EDT" name="doubleClickTest" description="Perform a double-click on the button and verify the result message" finished-at="2025-10-16T14:21:02 EDT" duration-ms="6257" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doubleClickTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.MouseActionsTests@5e17553a]" started-at="2025-10-12T15:03:48 EDT" name="tearDown" finished-at="2025-10-12T15:03:48 EDT" duration-ms="191" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.MouseActionsTests@5e17553a]" started-at="2025-10-16T14:21:02 EDT" name="tearDown" finished-at="2025-10-16T14:21:03 EDT" duration-ms="195" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.MouseActionsTests@5e17553a]" started-at="2025-10-12T15:03:48 EDT" name="setup" finished-at="2025-10-12T15:03:52 EDT" duration-ms="3739" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.MouseActionsTests@5e17553a]" started-at="2025-10-16T14:21:03 EDT" name="setup" finished-at="2025-10-16T14:21:06 EDT" duration-ms="3498" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -418,15 +418,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="dragAndDropTest()[pri:0, instance:core.MouseActionsTests@5e17553a]" started-at="2025-10-12T15:03:52 EDT" name="dragAndDropTest" description="Perform a drag-and-drop action and verify the drop zone" finished-at="2025-10-12T15:03:58 EDT" duration-ms="6329" status="PASS">
+        <test-method signature="dragAndDropTest()[pri:0, instance:core.MouseActionsTests@5e17553a]" started-at="2025-10-16T14:21:06 EDT" name="dragAndDropTest" description="Perform a drag-and-drop action and verify the drop zone" finished-at="2025-10-16T14:21:13 EDT" duration-ms="6352" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dragAndDropTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.MouseActionsTests@5e17553a]" started-at="2025-10-12T15:03:58 EDT" name="tearDown" finished-at="2025-10-12T15:03:58 EDT" duration-ms="193" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.MouseActionsTests@5e17553a]" started-at="2025-10-16T14:21:13 EDT" name="tearDown" finished-at="2025-10-16T14:21:13 EDT" duration-ms="178" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.MouseActionsTests@5e17553a]" started-at="2025-10-12T15:03:58 EDT" name="setup" finished-at="2025-10-12T15:04:02 EDT" duration-ms="3712" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.MouseActionsTests@5e17553a]" started-at="2025-10-16T14:21:13 EDT" name="setup" finished-at="2025-10-16T14:21:16 EDT" duration-ms="3491" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -437,15 +437,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="mouseHoverTest()[pri:0, instance:core.MouseActionsTests@5e17553a]" started-at="2025-10-12T15:04:02 EDT" name="mouseHoverTest" description="Perform a mouse hover and click on a textbox" finished-at="2025-10-12T15:04:08 EDT" duration-ms="6226" status="PASS">
+        <test-method signature="mouseHoverTest()[pri:0, instance:core.MouseActionsTests@5e17553a]" started-at="2025-10-16T14:21:16 EDT" name="mouseHoverTest" description="Perform a mouse hover and click on a textbox" finished-at="2025-10-16T14:21:22 EDT" duration-ms="6229" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mouseHoverTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.MouseActionsTests@5e17553a]" started-at="2025-10-12T15:04:08 EDT" name="tearDown" finished-at="2025-10-12T15:04:08 EDT" duration-ms="212" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.MouseActionsTests@5e17553a]" started-at="2025-10-16T14:21:22 EDT" name="tearDown" finished-at="2025-10-16T14:21:23 EDT" duration-ms="190" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.MouseActionsTests@5e17553a]" started-at="2025-10-12T15:04:08 EDT" name="setup" finished-at="2025-10-12T15:04:13 EDT" duration-ms="4457" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.MouseActionsTests@5e17553a]" started-at="2025-10-16T14:21:23 EDT" name="setup" finished-at="2025-10-16T14:21:26 EDT" duration-ms="3552" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -456,19 +456,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="rightClickTest()[pri:0, instance:core.MouseActionsTests@5e17553a]" started-at="2025-10-12T15:04:13 EDT" name="rightClickTest" description="Perform a right-click on the button and verify context menu links" finished-at="2025-10-12T15:04:19 EDT" duration-ms="6273" status="PASS">
+        <test-method signature="rightClickTest()[pri:0, instance:core.MouseActionsTests@5e17553a]" started-at="2025-10-16T14:21:26 EDT" name="rightClickTest" description="Perform a right-click on the button and verify context menu links" finished-at="2025-10-16T14:21:32 EDT" duration-ms="6279" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- rightClickTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.MouseActionsTests@5e17553a]" started-at="2025-10-12T15:04:19 EDT" name="tearDown" finished-at="2025-10-12T15:04:19 EDT" duration-ms="227" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.MouseActionsTests@5e17553a]" started-at="2025-10-16T14:21:32 EDT" name="tearDown" finished-at="2025-10-16T14:21:33 EDT" duration-ms="181" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- core.MouseActionsTests -->
     </test> <!-- Core Selenium Tests - Mouse Actions -->
-    <test started-at="2025-10-12T15:04:19 EDT" name="Core Selenium Tests - Keyboard Actions" finished-at="2025-10-12T15:05:04 EDT" duration-ms="44344">
+    <test started-at="2025-10-16T14:21:33 EDT" name="Core Selenium Tests - Keyboard Actions" finished-at="2025-10-16T14:22:16 EDT" duration-ms="43010">
       <class name="core.KeyboardActionsTests">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.KeyboardActionsTests@43015c69]" started-at="2025-10-12T15:04:19 EDT" name="setup" finished-at="2025-10-12T15:04:23 EDT" duration-ms="3431" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.KeyboardActionsTests@43015c69]" started-at="2025-10-16T14:21:33 EDT" name="setup" finished-at="2025-10-16T14:21:36 EDT" duration-ms="2945" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -479,15 +479,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="typeKeysTest()[pri:0, instance:core.KeyboardActionsTests@43015c69]" started-at="2025-10-12T15:04:23 EDT" name="typeKeysTest" description="Type &#039;Selenium&#039; and verify each key is detected correctly" finished-at="2025-10-12T15:04:47 EDT" duration-ms="24510" status="PASS">
+        <test-method signature="typeKeysTest()[pri:0, instance:core.KeyboardActionsTests@43015c69]" started-at="2025-10-16T14:21:36 EDT" name="typeKeysTest" description="Type &#039;Selenium&#039; and verify each key is detected correctly" finished-at="2025-10-16T14:22:00 EDT" duration-ms="24527" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- typeKeysTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.KeyboardActionsTests@43015c69]" started-at="2025-10-12T15:04:47 EDT" name="tearDown" finished-at="2025-10-12T15:04:47 EDT" duration-ms="203" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.KeyboardActionsTests@43015c69]" started-at="2025-10-16T14:22:00 EDT" name="tearDown" finished-at="2025-10-16T14:22:00 EDT" duration-ms="180" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.KeyboardActionsTests@43015c69]" started-at="2025-10-12T15:04:47 EDT" name="setup" finished-at="2025-10-12T15:04:51 EDT" duration-ms="3609" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.KeyboardActionsTests@43015c69]" started-at="2025-10-16T14:22:00 EDT" name="setup" finished-at="2025-10-16T14:22:03 EDT" duration-ms="2857" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -498,80 +498,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="typeSpecialKeysTest()[pri:0, instance:core.KeyboardActionsTests@43015c69]" started-at="2025-10-12T15:04:51 EDT" name="typeSpecialKeysTest" description="Verify that special keys are detected correctly" finished-at="2025-10-12T15:05:03 EDT" duration-ms="12335" status="PASS">
+        <test-method signature="typeSpecialKeysTest()[pri:0, instance:core.KeyboardActionsTests@43015c69]" started-at="2025-10-16T14:22:03 EDT" name="typeSpecialKeysTest" description="Verify that special keys are detected correctly" finished-at="2025-10-16T14:22:15 EDT" duration-ms="12340" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- typeSpecialKeysTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.KeyboardActionsTests@43015c69]" started-at="2025-10-12T15:05:03 EDT" name="tearDown" finished-at="2025-10-12T15:05:04 EDT" duration-ms="238" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.KeyboardActionsTests@43015c69]" started-at="2025-10-16T14:22:15 EDT" name="tearDown" finished-at="2025-10-16T14:22:16 EDT" duration-ms="146" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- core.KeyboardActionsTests -->
     </test> <!-- Core Selenium Tests - Keyboard Actions -->
-    <test started-at="2025-10-12T15:05:04 EDT" name="Core Selenium Tests - JavascriptExecutor" finished-at="2025-10-12T15:05:53 EDT" duration-ms="48992">
-      <class name="core.JavascriptExecutorTests">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.JavascriptExecutorTests@24c22fe]" started-at="2025-10-12T15:05:04 EDT" name="setup" finished-at="2025-10-12T15:05:10 EDT" duration-ms="6077" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[https://demoqa.com/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="clickTest()[pri:0, instance:core.JavascriptExecutorTests@24c22fe]" started-at="2025-10-12T15:05:10 EDT" name="clickTest" description="Clicks a button using JS and verifies success message" finished-at="2025-10-12T15:05:17 EDT" duration-ms="7589" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.JavascriptExecutorTests@24c22fe]" started-at="2025-10-12T15:05:17 EDT" name="tearDown" finished-at="2025-10-12T15:05:18 EDT" duration-ms="615" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.JavascriptExecutorTests@24c22fe]" started-at="2025-10-12T15:05:18 EDT" name="setup" finished-at="2025-10-12T15:05:24 EDT" duration-ms="6389" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[https://demoqa.com/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="scrollTest()[pri:0, instance:core.JavascriptExecutorTests@24c22fe]" started-at="2025-10-12T15:05:24 EDT" name="scrollTest" description="Scrolls page up and down using JS commands" finished-at="2025-10-12T15:05:36 EDT" duration-ms="12063" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- scrollTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.JavascriptExecutorTests@24c22fe]" started-at="2025-10-12T15:05:36 EDT" name="tearDown" finished-at="2025-10-12T15:05:37 EDT" duration-ms="325" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.JavascriptExecutorTests@24c22fe]" started-at="2025-10-12T15:05:37 EDT" name="setup" finished-at="2025-10-12T15:05:43 EDT" duration-ms="6503" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[https://demoqa.com/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="setValuesTest2()[pri:0, instance:core.JavascriptExecutorTests@24c22fe]" started-at="2025-10-12T15:05:43 EDT" name="setValuesTest2" description="Fills form using JS, submits, and validates entered data" finished-at="2025-10-12T15:05:52 EDT" duration-ms="8951" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setValuesTest2 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.JavascriptExecutorTests@24c22fe]" started-at="2025-10-12T15:05:52 EDT" name="tearDown" finished-at="2025-10-12T15:05:53 EDT" duration-ms="453" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- core.JavascriptExecutorTests -->
-    </test> <!-- Core Selenium Tests - JavascriptExecutor -->
-    <test started-at="2025-10-12T15:05:53 EDT" name="Core Selenium Tests - Screenshots" finished-at="2025-10-12T15:06:10 EDT" duration-ms="17884">
+    <test started-at="2025-10-16T14:22:16 EDT" name="Core Selenium Tests - Screenshots" finished-at="2025-10-16T14:22:30 EDT" duration-ms="14476">
       <class name="core.ScreenshotsTests">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.ScreenshotsTests@2bec854f]" started-at="2025-10-12T15:05:53 EDT" name="setup" finished-at="2025-10-12T15:05:59 EDT" duration-ms="6749" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.ScreenshotsTests@13bc8645]" started-at="2025-10-16T14:22:16 EDT" name="setup" finished-at="2025-10-16T14:22:22 EDT" duration-ms="5998" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -582,15 +521,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="captureElementTest()[pri:0, instance:core.ScreenshotsTests@2bec854f]" started-at="2025-10-12T15:05:59 EDT" name="captureElementTest" description="Captures a screenshot of the ToolsQA logo element" finished-at="2025-10-12T15:06:01 EDT" duration-ms="1851" status="PASS">
+        <test-method signature="captureElementTest()[pri:0, instance:core.ScreenshotsTests@13bc8645]" started-at="2025-10-16T14:22:22 EDT" name="captureElementTest" description="Captures a screenshot of the ToolsQA logo element" finished-at="2025-10-16T14:22:22 EDT" duration-ms="260" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureElementTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.ScreenshotsTests@2bec854f]" started-at="2025-10-12T15:06:01 EDT" name="tearDown" finished-at="2025-10-12T15:06:01 EDT" duration-ms="313" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.ScreenshotsTests@13bc8645]" started-at="2025-10-16T14:22:22 EDT" name="tearDown" finished-at="2025-10-16T14:22:22 EDT" duration-ms="451" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.ScreenshotsTests@2bec854f]" started-at="2025-10-12T15:06:01 EDT" name="setup" finished-at="2025-10-12T15:06:09 EDT" duration-ms="7009" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.ScreenshotsTests@13bc8645]" started-at="2025-10-16T14:22:22 EDT" name="setup" finished-at="2025-10-16T14:22:29 EDT" duration-ms="6900" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -601,19 +540,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="captureFullPageTest()[pri:0, instance:core.ScreenshotsTests@2bec854f]" started-at="2025-10-12T15:06:09 EDT" name="captureFullPageTest" description="Captures the full page of DemoQA homepage as an image" finished-at="2025-10-12T15:06:10 EDT" duration-ms="1573" status="PASS">
+        <test-method signature="captureFullPageTest()[pri:0, instance:core.ScreenshotsTests@13bc8645]" started-at="2025-10-16T14:22:29 EDT" name="captureFullPageTest" description="Captures the full page of DemoQA homepage as an image" finished-at="2025-10-16T14:22:30 EDT" duration-ms="581" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureFullPageTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.ScreenshotsTests@2bec854f]" started-at="2025-10-12T15:06:10 EDT" name="tearDown" finished-at="2025-10-12T15:06:10 EDT" duration-ms="373" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.ScreenshotsTests@13bc8645]" started-at="2025-10-16T14:22:30 EDT" name="tearDown" finished-at="2025-10-16T14:22:30 EDT" duration-ms="275" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- core.ScreenshotsTests -->
     </test> <!-- Core Selenium Tests - Screenshots -->
-    <test started-at="2025-10-12T15:06:10 EDT" name="Core Selenium Tests - Dropdowns" finished-at="2025-10-12T15:06:58 EDT" duration-ms="47977">
+    <test started-at="2025-10-16T14:22:30 EDT" name="Core Selenium Tests - Dropdowns" finished-at="2025-10-16T14:23:41 EDT" duration-ms="71184">
       <class name="core.DropdownsTests">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.DropdownsTests@2663e964]" started-at="2025-10-12T15:06:10 EDT" name="setup" finished-at="2025-10-12T15:06:14 EDT" duration-ms="3779" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.DropdownsTests@31edaa7d]" started-at="2025-10-16T14:22:30 EDT" name="setup" finished-at="2025-10-16T14:22:43 EDT" duration-ms="12870" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -624,15 +563,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="selectByIndex()[pri:0, instance:core.DropdownsTests@2663e964]" started-at="2025-10-12T15:06:14 EDT" name="selectByIndex" description="Select &#039;India&#039; from country dropdown by index and validate selection" finished-at="2025-10-12T15:06:21 EDT" duration-ms="6487" status="PASS">
+        <test-method signature="selectByIndex()[pri:0, instance:core.DropdownsTests@31edaa7d]" started-at="2025-10-16T14:22:43 EDT" name="selectByIndex" description="Select &#039;India&#039; from country dropdown by index and validate selection" finished-at="2025-10-16T14:22:50 EDT" duration-ms="6505" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectByIndex -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.DropdownsTests@2663e964]" started-at="2025-10-12T15:06:21 EDT" name="tearDown" finished-at="2025-10-12T15:06:21 EDT" duration-ms="213" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.DropdownsTests@31edaa7d]" started-at="2025-10-16T14:22:50 EDT" name="tearDown" finished-at="2025-10-16T14:22:50 EDT" duration-ms="213" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.DropdownsTests@2663e964]" started-at="2025-10-12T15:06:21 EDT" name="setup" finished-at="2025-10-12T15:06:25 EDT" duration-ms="3803" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.DropdownsTests@31edaa7d]" started-at="2025-10-16T14:22:50 EDT" name="setup" finished-at="2025-10-16T14:23:06 EDT" duration-ms="16024" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -643,15 +582,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="selectByValue()[pri:0, instance:core.DropdownsTests@2663e964]" started-at="2025-10-12T15:06:25 EDT" name="selectByValue" description="Select &#039;France&#039; from country dropdown by value and validate selection" finished-at="2025-10-12T15:06:31 EDT" duration-ms="6430" status="PASS">
+        <test-method signature="selectByValue()[pri:0, instance:core.DropdownsTests@31edaa7d]" started-at="2025-10-16T14:23:06 EDT" name="selectByValue" description="Select &#039;France&#039; from country dropdown by value and validate selection" finished-at="2025-10-16T14:23:12 EDT" duration-ms="6615" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectByValue -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.DropdownsTests@2663e964]" started-at="2025-10-12T15:06:31 EDT" name="tearDown" finished-at="2025-10-12T15:06:31 EDT" duration-ms="235" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.DropdownsTests@31edaa7d]" started-at="2025-10-16T14:23:12 EDT" name="tearDown" finished-at="2025-10-16T14:23:13 EDT" duration-ms="131" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.DropdownsTests@2663e964]" started-at="2025-10-12T15:06:31 EDT" name="setup" finished-at="2025-10-12T15:06:35 EDT" duration-ms="3713" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.DropdownsTests@31edaa7d]" started-at="2025-10-16T14:23:13 EDT" name="setup" finished-at="2025-10-16T14:23:17 EDT" duration-ms="4097" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -662,15 +601,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="selectByVisibleText()[pri:0, instance:core.DropdownsTests@2663e964]" started-at="2025-10-12T15:06:35 EDT" name="selectByVisibleText" description="Select &#039;Brazil&#039; from country dropdown by visible text and validate selection" finished-at="2025-10-12T15:06:42 EDT" duration-ms="6505" status="PASS">
+        <test-method signature="selectByVisibleText()[pri:0, instance:core.DropdownsTests@31edaa7d]" started-at="2025-10-16T14:23:17 EDT" name="selectByVisibleText" description="Select &#039;Brazil&#039; from country dropdown by visible text and validate selection" finished-at="2025-10-16T14:23:24 EDT" duration-ms="7180" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectByVisibleText -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.DropdownsTests@2663e964]" started-at="2025-10-12T15:06:42 EDT" name="tearDown" finished-at="2025-10-12T15:06:42 EDT" duration-ms="228" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.DropdownsTests@31edaa7d]" started-at="2025-10-16T14:23:24 EDT" name="tearDown" finished-at="2025-10-16T14:23:24 EDT" duration-ms="191" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.DropdownsTests@2663e964]" started-at="2025-10-12T15:06:42 EDT" name="setup" finished-at="2025-10-12T15:06:46 EDT" duration-ms="3707" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.DropdownsTests@31edaa7d]" started-at="2025-10-16T14:23:24 EDT" name="setup" finished-at="2025-10-16T14:23:28 EDT" duration-ms="4054" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -681,19 +620,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="selectMultiDropdown()[pri:0, instance:core.DropdownsTests@2663e964]" started-at="2025-10-12T15:06:46 EDT" name="selectMultiDropdown" description="Select multiple options from colors dropdown and validate selections" finished-at="2025-10-12T15:06:58 EDT" duration-ms="12638" status="PASS">
+        <test-method signature="selectMultiDropdown()[pri:0, instance:core.DropdownsTests@31edaa7d]" started-at="2025-10-16T14:23:28 EDT" name="selectMultiDropdown" description="Select multiple options from colors dropdown and validate selections" finished-at="2025-10-16T14:23:41 EDT" duration-ms="13091" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectMultiDropdown -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.DropdownsTests@2663e964]" started-at="2025-10-12T15:06:58 EDT" name="tearDown" finished-at="2025-10-12T15:06:58 EDT" duration-ms="212" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.DropdownsTests@31edaa7d]" started-at="2025-10-16T14:23:41 EDT" name="tearDown" finished-at="2025-10-16T14:23:41 EDT" duration-ms="186" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- core.DropdownsTests -->
     </test> <!-- Core Selenium Tests - Dropdowns -->
-    <test started-at="2025-10-12T15:06:58 EDT" name="Core Selenium Tests - Checkboxes" finished-at="2025-10-12T15:07:14 EDT" duration-ms="15881">
+    <test started-at="2025-10-16T14:23:41 EDT" name="Core Selenium Tests - Checkboxes" finished-at="2025-10-16T14:23:58 EDT" duration-ms="16721">
       <class name="core.CheckboxesTests">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.CheckboxesTests@2205a05d]" started-at="2025-10-12T15:06:58 EDT" name="setup" finished-at="2025-10-12T15:07:02 EDT" duration-ms="3106" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.CheckboxesTests@6f3187b0]" started-at="2025-10-16T14:23:41 EDT" name="setup" finished-at="2025-10-16T14:23:45 EDT" duration-ms="3347" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -704,15 +643,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testMultipleCheckboxes()[pri:0, instance:core.CheckboxesTests@2205a05d]" started-at="2025-10-12T15:07:02 EDT" name="testMultipleCheckboxes" description="Select multiple checkboxes, validate selections, and uncheck one" finished-at="2025-10-12T15:07:08 EDT" duration-ms="6238" status="PASS">
+        <test-method signature="testMultipleCheckboxes()[pri:0, instance:core.CheckboxesTests@6f3187b0]" started-at="2025-10-16T14:23:45 EDT" name="testMultipleCheckboxes" description="Select multiple checkboxes, validate selections, and uncheck one" finished-at="2025-10-16T14:23:51 EDT" duration-ms="6281" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMultipleCheckboxes -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.CheckboxesTests@2205a05d]" started-at="2025-10-12T15:07:08 EDT" name="tearDown" finished-at="2025-10-12T15:07:08 EDT" duration-ms="193" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.CheckboxesTests@6f3187b0]" started-at="2025-10-16T14:23:51 EDT" name="tearDown" finished-at="2025-10-16T14:23:51 EDT" duration-ms="187" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.CheckboxesTests@2205a05d]" started-at="2025-10-12T15:07:08 EDT" name="setup" finished-at="2025-10-12T15:07:11 EDT" duration-ms="2982" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.CheckboxesTests@6f3187b0]" started-at="2025-10-16T14:23:51 EDT" name="setup" finished-at="2025-10-16T14:23:55 EDT" duration-ms="3576" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -723,19 +662,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testSingleCheckbox()[pri:0, instance:core.CheckboxesTests@2205a05d]" started-at="2025-10-12T15:07:11 EDT" name="testSingleCheckbox" description="Select the first checkbox and validate that it is selected" finished-at="2025-10-12T15:07:14 EDT" duration-ms="3119" status="PASS">
+        <test-method signature="testSingleCheckbox()[pri:0, instance:core.CheckboxesTests@6f3187b0]" started-at="2025-10-16T14:23:55 EDT" name="testSingleCheckbox" description="Select the first checkbox and validate that it is selected" finished-at="2025-10-16T14:23:58 EDT" duration-ms="3141" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSingleCheckbox -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.CheckboxesTests@2205a05d]" started-at="2025-10-12T15:07:14 EDT" name="tearDown" finished-at="2025-10-12T15:07:14 EDT" duration-ms="203" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.CheckboxesTests@6f3187b0]" started-at="2025-10-16T14:23:58 EDT" name="tearDown" finished-at="2025-10-16T14:23:58 EDT" duration-ms="168" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- core.CheckboxesTests -->
     </test> <!-- Core Selenium Tests - Checkboxes -->
-    <test started-at="2025-10-12T15:07:14 EDT" name="Core Selenium Tests - Radio Buttons" finished-at="2025-10-12T15:07:54 EDT" duration-ms="39439">
+    <test started-at="2025-10-16T14:23:58 EDT" name="Core Selenium Tests - Radio Buttons" finished-at="2025-10-16T14:24:50 EDT" duration-ms="52282">
       <class name="core.RadioButtonsTests">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.RadioButtonsTests@3fce8fd9]" started-at="2025-10-12T15:07:14 EDT" name="setup" finished-at="2025-10-12T15:07:24 EDT" duration-ms="9379" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.RadioButtonsTests@2205a05d]" started-at="2025-10-16T14:23:58 EDT" name="setup" finished-at="2025-10-16T14:24:08 EDT" duration-ms="9900" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -746,15 +685,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="selectOtherRadioButtonTest()[pri:0, instance:core.RadioButtonsTests@3fce8fd9]" started-at="2025-10-12T15:07:24 EDT" name="selectOtherRadioButtonTest" description="Click the &#039;Impressive&#039; radio button and verify that it is selected" finished-at="2025-10-12T15:07:27 EDT" duration-ms="3105" status="PASS">
+        <test-method signature="selectOtherRadioButtonTest()[pri:0, instance:core.RadioButtonsTests@2205a05d]" started-at="2025-10-16T14:24:08 EDT" name="selectOtherRadioButtonTest" description="Click the &#039;Impressive&#039; radio button and verify that it is selected" finished-at="2025-10-16T14:24:11 EDT" duration-ms="3449" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectOtherRadioButtonTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.RadioButtonsTests@3fce8fd9]" started-at="2025-10-12T15:07:27 EDT" name="tearDown" finished-at="2025-10-12T15:07:27 EDT" duration-ms="408" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.RadioButtonsTests@2205a05d]" started-at="2025-10-16T14:24:11 EDT" name="tearDown" finished-at="2025-10-16T14:24:12 EDT" duration-ms="289" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.RadioButtonsTests@3fce8fd9]" started-at="2025-10-12T15:07:27 EDT" name="setup" finished-at="2025-10-12T15:07:37 EDT" duration-ms="9332" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.RadioButtonsTests@2205a05d]" started-at="2025-10-16T14:24:12 EDT" name="setup" finished-at="2025-10-16T14:24:21 EDT" duration-ms="8896" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -765,15 +704,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="selectRadioButtonTest()[pri:0, instance:core.RadioButtonsTests@3fce8fd9]" started-at="2025-10-12T15:07:37 EDT" name="selectRadioButtonTest" description="Click the &#039;Yes&#039; radio button and verify that it is selected" finished-at="2025-10-12T15:07:40 EDT" duration-ms="3365" status="PASS">
+        <test-method signature="selectRadioButtonTest()[pri:0, instance:core.RadioButtonsTests@2205a05d]" started-at="2025-10-16T14:24:21 EDT" name="selectRadioButtonTest" description="Click the &#039;Yes&#039; radio button and verify that it is selected" finished-at="2025-10-16T14:24:24 EDT" duration-ms="3195" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectRadioButtonTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.RadioButtonsTests@3fce8fd9]" started-at="2025-10-12T15:07:40 EDT" name="tearDown" finished-at="2025-10-12T15:07:40 EDT" duration-ms="339" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.RadioButtonsTests@2205a05d]" started-at="2025-10-16T14:24:24 EDT" name="tearDown" finished-at="2025-10-16T14:24:24 EDT" duration-ms="263" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.RadioButtonsTests@3fce8fd9]" started-at="2025-10-12T15:07:40 EDT" name="setup" finished-at="2025-10-12T15:07:50 EDT" duration-ms="9897" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:core.RadioButtonsTests@2205a05d]" started-at="2025-10-16T14:24:24 EDT" name="setup" finished-at="2025-10-16T14:24:33 EDT" duration-ms="9111" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -784,11 +723,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyDisabledRadioButtonTest()[pri:0, instance:core.RadioButtonsTests@3fce8fd9]" started-at="2025-10-12T15:07:50 EDT" name="verifyDisabledRadioButtonTest" description="Verify that the &#039;No&#039; radio button is not clickable or selectable" finished-at="2025-10-12T15:07:53 EDT" duration-ms="3194" status="PASS">
+        <test-method signature="verifyDisabledRadioButtonTest()[pri:0, instance:core.RadioButtonsTests@2205a05d]" started-at="2025-10-16T14:24:33 EDT" name="verifyDisabledRadioButtonTest" description="Verify that the &#039;No&#039; radio button is not clickable or selectable" finished-at="2025-10-16T14:24:49 EDT" duration-ms="16295" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyDisabledRadioButtonTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.RadioButtonsTests@3fce8fd9]" started-at="2025-10-12T15:07:53 EDT" name="tearDown" finished-at="2025-10-12T15:07:54 EDT" duration-ms="401" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:core.RadioButtonsTests@2205a05d]" started-at="2025-10-16T14:24:49 EDT" name="tearDown" finished-at="2025-10-16T14:24:50 EDT" duration-ms="867" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

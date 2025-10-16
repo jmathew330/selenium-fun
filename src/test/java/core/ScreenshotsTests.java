@@ -1,12 +1,15 @@
 package core;
 
 import java.io.IOException;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
-import io.qameta.allure.*;
 import base.BaseTest;
-import utils.ScreenshotTestsUtils;
+import io.qameta.allure.Description;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.Story;
+import pages.ScreenshotsPage;
 
 /**
  * ScreenshotsTests demonstrates how to capture screenshots using Selenium WebDriver.
@@ -22,17 +25,20 @@ import utils.ScreenshotTestsUtils;
 @Epic("Core Selenium Tests")
 @Feature("Screenshot Capturing Module")
 public class ScreenshotsTests extends BaseTest {
+	
+	ScreenshotsPage sp;
 
     @Story("Capture full-page screenshot")
     @Test(description = "Captures the full page of DemoQA homepage as an image")
     @Severity(SeverityLevel.CRITICAL)
     @Description("Captures a full-page screenshot of the DemoQA homepage and saves it to the screenshots folder.")
     public void captureFullPageTest() throws IOException {
-        // Navigate to the page to capture
-        driver.get("https://demoqa.com");
+    	
+    	//Initialize the ScreenshotsPage object with driver and TakesScreenshot
+    	sp = new ScreenshotsPage(driver, ts);
 
         // Capture a full-page screenshot
-        ScreenshotTestsUtils.captureFullPage(driver, "FullPage_Home.png");
+    	sp.captureFullPage(driver, "FullPage_Home");
     }
 
     @Story("Capture specific element screenshot")
@@ -40,13 +46,11 @@ public class ScreenshotsTests extends BaseTest {
     @Severity(SeverityLevel.NORMAL)
     @Description("Captures a screenshot of the ToolsQA logo element and saves it to the screenshots folder.")
     public void captureElementTest() throws IOException {
-        // Navigate to the page that contains the element
-        driver.get("https://demoqa.com");
-
-        // Locate the specific element (ToolsQA logo)
-        WebElement elementToCapture = driver.findElement(By.xpath("//img[@src='/images/Toolsqa.jpg']"));
+    	
+    	//Initialize the ScreenshotsPage object with driver and TakesScreenshot
+    	sp = new ScreenshotsPage(driver, ts);
 
         // Capture a screenshot of the specific element
-        ScreenshotTestsUtils.captureElement(driver, elementToCapture, "Element_Logo.png");
+    	sp.captureLogoElement();
     }
 }

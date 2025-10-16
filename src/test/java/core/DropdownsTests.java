@@ -3,9 +3,7 @@ package core;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -16,7 +14,7 @@ import io.qameta.allure.Feature;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import io.qameta.allure.Story;
-import utils.DropdownsTestsUtils;
+import pages.DropdownsPage;
 
 /**
  * DropdownsTests contains Selenium tests to validate dropdown selection
@@ -24,35 +22,51 @@ import utils.DropdownsTestsUtils;
  * handling of multi-select dropdowns.
  */
 
-@Epic("Core Selenium Tests")
-@Feature("Dropdown Handling Module")
+@Epic("Core Selenium Tests") // Allure annotation to group tests under a common Epic
+@Feature("Dropdown Handling Module") // Allure annotation to identify the tested feature
 public class DropdownsTests extends BaseTest {
+	
+	DropdownsPage dp; // Page object for dropdown-related actions
 
     // ----------------------
     // Single-selection dropdown tests
     // ----------------------
 
-    @Story("Select option by visible text")
+    @Story("Select option by visible text") // Allure annotation to describe user story
     @Test(description = "Select 'Brazil' from country dropdown by visible text and validate selection")
     @Severity(SeverityLevel.NORMAL)
     @Description("Selects an option by visible text from the dropdown and verifies it was selected correctly.")
     public void selectByVisibleText() throws InterruptedException {
-        DropdownsTestsUtils.scrollToDropdowns(driver, js);
-        WebElement select_country_element = driver.findElement(By.id("country"));
-        Select select_country = new Select(select_country_element);
+    	
+    	// Initialize the DropdownsPage object with driver and JavascriptExecutor
+    	dp = new DropdownsPage(driver, js);
+    	
+    	// Scroll to dropdown section
+    	dp.scrollToDropdowns();
+    	
         // Highlight the element for demo
-        highlightElement(js, select_country_element);
+        dp.highlight_select_country_element();
+        
         // Pause to visually observe the demo
         pauseForDemo();
-        select_country.selectByVisibleText("Brazil");
+        
+        // Select option by visible text
+        dp.selectCountryByVisibleText("Brazil");
+        
         // Pause to visually observe the demo
         pauseForDemo();
-
-        // Verify selected option
-        WebElement selectedOption = select_country.getFirstSelectedOption();
-        String selectedOptionText = selectedOption.getText();
-        Assert.assertTrue(selectedOption.isSelected(), "Option should be selected.");
-        Assert.assertTrue(selectedOptionText.contains("Brazil"), "Selected option text should contain 'Brazil'.");
+        
+        // Get selected option (not used, but may be for debugging/logging)
+        dp.getFirstSelectedCountryOption();
+        
+        // Get selected option text (used for validation)
+        dp.getFirstSelectedCountryOptionText();
+        
+        // Assert the selected option is marked as selected
+        Assert.assertTrue(dp.isCountryOptionSelected(), "Option should be selected.");
+        
+        // Assert the selected option text contains "Brazil"
+        Assert.assertTrue(dp.getFirstSelectedCountryOptionText().contains("Brazil"), "Selected option text should contain 'Brazil'.");
     }
 
     @Story("Select option by value")
@@ -60,21 +74,30 @@ public class DropdownsTests extends BaseTest {
     @Severity(SeverityLevel.NORMAL)
     @Description("Selects an option by value from the dropdown and verifies the correct option was selected.")
     public void selectByValue() throws InterruptedException {
-        DropdownsTestsUtils.scrollToDropdowns(driver, js);
-        WebElement select_country_element = driver.findElement(By.id("country"));
-        Select select_country = new Select(select_country_element);
-        // Highlight the element for demo
-        highlightElement(js, select_country_element);
-        // Pause to visually observe the demo
-        pauseForDemo();
-        select_country.selectByValue("france");
-        // Pause to visually observe the demo
-        pauseForDemo();
+       
+    	// Initialize the DropdownsPage object with driver and JavascriptExecutor
+    	dp = new DropdownsPage(driver, js);
+        
+        // Scroll to dropdown section
+        dp.scrollToDropdowns();
 
-        WebElement selectedOption = select_country.getFirstSelectedOption();
-        String selectedOptionText = selectedOption.getText();
-        Assert.assertTrue(selectedOption.isSelected(), "Option should be selected.");
-        Assert.assertTrue(selectedOptionText.contains("France"), "Selected option text should contain 'France'.");
+        // Highlight the element for demo
+        dp.highlight_select_country_element();
+        
+        // Pause to visually observe the demo
+        pauseForDemo();
+        
+        // Select option by value
+        dp.selectCountryByValue("france");
+        
+        // Pause to visually observe the demo
+        pauseForDemo();
+        
+        // Assert the selected option is marked as selected
+        Assert.assertTrue(dp.isCountryOptionSelected(), "Option should be selected.");
+        
+        // Assert the selected option text contains "France"
+        Assert.assertTrue(dp.getFirstSelectedCountryOptionText().contains("France"), "Selected option text should contain 'France'.");
     }
 
     @Story("Select option by index")
@@ -82,21 +105,30 @@ public class DropdownsTests extends BaseTest {
     @Severity(SeverityLevel.NORMAL)
     @Description("Selects an option by index from the dropdown and validates that the expected option is chosen.")
     public void selectByIndex() throws InterruptedException {
-        DropdownsTestsUtils.scrollToDropdowns(driver, js);
-        WebElement select_country_element = driver.findElement(By.id("country"));
-        Select select_country = new Select(select_country_element);
+    	
+    	// Initialize the DropdownsPage object with driver and JavascriptExecutor
+    	dp = new DropdownsPage(driver, js);
+    	
+    	// Scroll to dropdown section
+    	dp.scrollToDropdowns();
+
         // Highlight the element for demo
-        highlightElement(js, select_country_element);
+    	dp.highlight_select_country_element();
+    	
         // Pause to visually observe the demo
         pauseForDemo();
-        select_country.selectByIndex(9);
+        
+        // Select option by index (e.g., 9 = "India")
+        dp.selectCountryByIndex(9);
+        
         // Pause to visually observe the demo
         pauseForDemo();
 
-        WebElement selectedOption = select_country.getFirstSelectedOption();
-        String selectedOptionText = selectedOption.getText();
-        Assert.assertTrue(selectedOption.isSelected(), "Option should be selected.");
-        Assert.assertTrue(selectedOptionText.contains("India"), "Selected option text should contain 'India'.");
+        // Assert the selected option is marked as selected
+        Assert.assertTrue(dp.isCountryOptionSelected(), "Option should be selected.");
+        
+        // Assert the selected option text contains "India"
+        Assert.assertTrue(dp.getFirstSelectedCountryOptionText().contains("India"), "Selected option text should contain 'India'.");
     }
 
     // ----------------------
@@ -108,31 +140,53 @@ public class DropdownsTests extends BaseTest {
     @Severity(SeverityLevel.NORMAL)
     @Description("Selects multiple options in a multi-select dropdown and validates the selections.")
     public void selectMultiDropdown() throws InterruptedException {
-        DropdownsTestsUtils.scrollToDropdowns(driver, js);
-        WebElement select_colors_element = driver.findElement(By.id("colors"));
-        Select select_colors = new Select(select_colors_element);
-        Assert.assertTrue(select_colors.isMultiple(), "Dropdown should support multiple selections.");
+    	
+    	// Initialize the DropdownsPage object with driver and JavascriptExecutor
+    	dp  = new DropdownsPage(driver, js);
+    	
+    	// Scroll to multi-select dropdown section
+    	dp.scrollToDropdowns();
+    	
+    	// Check if the colors dropdown supports multi-select
+    	dp.isColorsMultiSelect();
+    	
         // Highlight the element for demo
-        highlightElement(js, select_colors_element);
+    	dp.highlight_select_colors_element();
+    	
         // Pause to visually observe the demo
         pauseForDemo();
-        select_colors.selectByVisibleText("Blue");
+        
+        // Select "Blue" by visible text
+        dp.selectColorByVisibleText("Blue");
+        
         // Pause to visually observe the demo before making selection
         pauseForDemo();
-        select_colors.selectByValue("white");
+        
+        // Select "White" by value
+        dp.selectColorByValue("white");
+        
         // Pause to visually observe the demo before making selection
         pauseForDemo();
-        select_colors.selectByIndex(3);
+        
+        // Select a color by index (e.g., index 3 = "Yellow")
+        dp.selectColorByIndex(3);
+        
         // Pause to visually observe the demo before making selection
         pauseForDemo();
 
-        List<WebElement> selectedOptions = select_colors.getAllSelectedOptions();
+        // Retrieve all selected options from the dropdown
+        List<WebElement> selectedOptions = dp.getAllSelectedColorOptions();
+        
+        // Store selected option texts for assertion
         List<String> actualOptions = new ArrayList<>();
+        
+        // Validate each selected option is selected and collect its text
         for (WebElement option : selectedOptions) {
             Assert.assertTrue(option.isSelected(), "Option should be selected: " + option.getText());
             actualOptions.add(option.getText());
         }
 
+        // Assert that all expected selections are present
         Assert.assertTrue(actualOptions.contains("Blue"), "Multi-select should contain 'Blue'.");
         Assert.assertTrue(actualOptions.contains("White"), "Multi-select should contain 'White'.");
         Assert.assertTrue(actualOptions.contains("Yellow"), "Multi-select should contain 'Yellow'.");
