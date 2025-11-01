@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="core.LocatorsTests">
+      <class name="advanced.StaticTable">
         <methods>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="locateById"/>
-          <include name="locateByClassName"/>
+          <include name="readAllTableData"/>
         </methods>
-      </class> <!-- core.LocatorsTests -->
+      </class> <!-- advanced.StaticTable -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

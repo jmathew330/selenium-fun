@@ -1,14 +1,16 @@
 package core;
 
 import java.util.List;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import base.BaseTest;
-import io.qameta.allure.*;
-import utils.JavascriptExecutorTestsUtils;
+import io.qameta.allure.Description;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.Story;
+import pages.JavascriptExecutorPage;
 
 /**
  * JavascriptExecutorTests demonstrates how to use Selenium's JavaScriptExecutor 
@@ -28,30 +30,37 @@ import utils.JavascriptExecutorTestsUtils;
 @Epic("Core Selenium Tests")
 @Feature("JavaScript Executor Module")
 public class JavascriptExecutorTests extends BaseTest {
+	
+	JavascriptExecutorPage jp;
 
     @Story("Scroll vertically and verify page movement")
     @Test(description = "Scrolls page up and down using JS commands")
     @Severity(SeverityLevel.MINOR)
     @Description("Uses JavaScriptExecutor to scroll down, scroll to bottom, and return to top of the page.")
     public void scrollTest() throws InterruptedException {
+    	
+    	jp = new JavascriptExecutorPage(driver, js, wait);
 
         // Pause to visually observe the demo
         pauseForDemo();
 
         // Scroll down by 200 pixels
-        js.executeScript("window.scrollBy(0, 200);");
+        jp.scrollPageBy200Px();
+        //js.executeScript("window.scrollBy(0, 200);");
 
         // Pause to visually observe the demo
         pauseForDemo();
 
         // Scroll to the bottom of the page
-        js.executeScript("window.scrollTo(0, document.body.scrollHeight);");
+        jp.scrollPageToBottom();
+        //js.executeScript("window.scrollTo(0, document.body.scrollHeight);");
 
         // Pause to visually observe the demo
         pauseForDemo();
 
         // Scroll back to the top
-        js.executeScript("window.scrollTo(0,0);");
+        jp.scrollPageToTop();
+        //js.executeScript("window.scrollTo(0,0);");
 
         // Pause to visually observe the demo
         pauseForDemo();
@@ -62,25 +71,20 @@ public class JavascriptExecutorTests extends BaseTest {
     @Severity(SeverityLevel.CRITICAL)
     @Description("Executes JavaScript click on 'Click Me' button and verifies dynamic success message.")
     public void clickTest() throws InterruptedException {
+    	
+    	jp = new JavascriptExecutorPage(driver, js, wait);
 
         // Open demo site with button click functionality
-        JavascriptExecutorTestsUtils.openDemoQASite(driver, js);
+    	jp.openButtonsPage();
 
-        // Locate the 'Click Me' button
-        WebElement button_ClickMe = driver.findElement(By.xpath("(//button[normalize-space()='Click Me'])"));
-
-        // Click the button using JS
-        js.executeScript("arguments[0].click();", button_ClickMe);
+    	// Click the button using JS
+    	jp.click_button_ClickMe();
         
         // Pause to visually observe the demo
         pauseForDemo();
 
-        // Locate and verify success message
-        WebElement p_message = driver.findElement(By.id("dynamicClickMessage"));
-        String p_message_text = p_message.getText();
-
         // Assertion to confirm click worked
-        Assert.assertTrue(p_message_text.contains("You have done a dynamic click"));
+        Assert.assertTrue(jp.get_p_message_Text().contains("You have done a dynamic click"));
     }
 	
     @Story("Set and verify input field values using JavaScriptExecutor")
@@ -88,49 +92,33 @@ public class JavascriptExecutorTests extends BaseTest {
     @Severity(SeverityLevel.BLOCKER)
     @Description("Fills out form fields via JS, submits form, retrieves data from table, and validates values.")
     public void setValuesTest2() throws InterruptedException {
+    	
+    	jp = new JavascriptExecutorPage(driver, js, wait);
 
         // Open Demo QA Form page
-        JavascriptExecutorTestsUtils.openDemoQASite_Form(driver, js);
-
-        // Locate all input fields
-        WebElement input_firstName = driver.findElement(By.id("firstName"));
-        WebElement input_lastName = driver.findElement(By.id("lastName"));
-        WebElement input_email = driver.findElement(By.id("userEmail"));
-        WebElement input_gender = driver.findElement(By.xpath("//input[@value='Male']"));
-        WebElement input_phone = driver.findElement(By.id("userNumber"));
-        WebElement input_dob = driver.findElement(By.id("dateOfBirthInput"));
-        WebElement input_address = driver.findElement(By.id("currentAddress"));
-
+    	jp.openFormPage();
+  
         // Populate fields using JSExecutor
-        js.executeScript("arguments[0].value = 'FNTest';", input_firstName);
-        js.executeScript("arguments[0].value = 'LNTest';", input_lastName);
-        js.executeScript("arguments[0].value = 'testemail123@email.com';", input_email);
-        js.executeScript("arguments[0].click();", input_gender);
-        js.executeScript("arguments[0].value = '1234567890';", input_phone);
-        js.executeScript("arguments[0].value = '11 Jan 2005';", input_dob);
-        js.executeScript("arguments[0].value = '123 QA Lane';", input_address);
-
-        // Wait for the submit button to be clickable
-        WebElement button_submit = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@id='submit']")));
+    	jp.fillOutForm();
 
         // Click the submit button via JS
-        js.executeScript("arguments[0].click();", button_submit);
+    	jp.clickSubmit();
         
         // Pause to visually observe the demo
         pauseForDemo();
 
         // Retrieve field values via JS
-        String input_firstName_value = (String) js.executeScript("return arguments[0].value;", input_firstName);
-        String input_lastName_value = (String) js.executeScript("return arguments[0].value;", input_lastName);
-        String input_email_value = (String) js.executeScript("return arguments[0].value;", input_email);
-        String input_gender_value = (String) js.executeScript("return arguments[0].value;", input_gender);
-        String input_phone_value = (String) js.executeScript("return arguments[0].value;", input_phone);
-        String input_dob_value = (String) js.executeScript("return arguments[0].value;", input_dob);
-        String input_address_value = (String) js.executeScript("return arguments[0].value;", input_address);
+        String input_firstName_value = jp.get_input_firstName_value();
+        String input_lastName_value = jp.get_input_lastName_value();
+        String input_email_value = jp.get_input_email_value();
+        String input_gender_value = jp.get_input_gender_value();
+        String input_phone_value = jp.get_input_phone_value();
+        String input_dob_value = jp.get_input_dob_value();
+        String input_address_value = jp.get_input_address_value();
 
         // Retrieve submitted data from output table
-        List<String> formData = JavascriptExecutorTestsUtils.retrieveValuesFromTableColumn(driver, "//table//tbody//tr//td[2]");
-
+        List<String> formData = jp.retrieveValuesFromTable(driver, "//table//tbody//tr//td[2]");
+        
         // Split full name for comparison
         String[] name = formData.get(0).split(" ");
         input_firstName_value = name[0];
@@ -146,7 +134,7 @@ public class JavascriptExecutorTests extends BaseTest {
         Assert.assertEquals(input_email_value, "testemail123@email.com");
         Assert.assertEquals(input_gender_value, "Male");
         Assert.assertEquals(input_phone_value, "1234567890");
-        JavascriptExecutorTestsUtils.assertInputOutputDates(formData, 4, "dd MMM yyyy", "dd MMMM,yyyy", input_dob_value);
+        jp.assertInputOutputDates(formData, 4, "dd MMM yyyy", "dd MMMM,yyyy", input_dob_value);
         Assert.assertEquals(input_address_value, "123 QA Lane");
     }
 }
