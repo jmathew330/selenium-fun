@@ -121,7 +121,7 @@ src/
 - **Select 'Impressive' Radio Button:** Verifies selection and confirmation message  
 - **Verify Disabled 'No' Radio Button:** Confirms it is not clickable
 
-  ### 13. StaticTableTest
+### 13. StaticTableTest
 - **Purpose:** Validates reading and verifying all data from a **static HTML table**.  
 - **Approach:** Uses Page Object Model (POM) to read all rows and columns and compares them with a predefined dataset.  
 - **Key Validations:** Confirms that all table data matches the expected values and maintains data integrity.
