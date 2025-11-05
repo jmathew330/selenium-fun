@@ -52,6 +52,10 @@ src/
     │       ├── DropdownsTests.java    
     │       ├── CheckboxesTests.java
     │       └── RadioButtonsTests.java
+    │   │
+    │   └── advanced/
+    │       ├── StaticTableTest.java
+    │       └── DatePickerTests.java
 ```
 - **base/BaseTest.java** → WebDriver setup, teardown, and shared methods  
 - **core/** → Modular tests demonstrating different Selenium concepts  
@@ -115,7 +119,18 @@ src/
 ### 12. RadioButtonsTests
 - **Select 'Yes' Radio Button:** Verifies selection and confirmation message  
 - **Select 'Impressive' Radio Button:** Verifies selection and confirmation message  
-- **Verify Disabled 'No' Radio Button:** Confirms it is not clickable  
+- **Verify Disabled 'No' Radio Button:** Confirms it is not clickable
+
+  ### 13. StaticTableTest
+- **Purpose:** Validates reading and verifying all data from a **static HTML table**.  
+- **Approach:** Uses Page Object Model (POM) to read all rows and columns and compares them with a predefined dataset.  
+- **Key Validations:** Confirms that all table data matches the expected values and maintains data integrity.
+
+### 14. DatePickerTests
+- **Purpose:** Tests interactions with a **jQuery UI DatePicker** widget.  
+- **Approach:** Selects both future and past dates using a POM class and validates that the input field reflects the selected date.  
+- **Key Validations:** Ensures correct date selection, navigation between months/years, and proper date formatting (`MM/dd/yyyy`).  
+
   
 ---
 
