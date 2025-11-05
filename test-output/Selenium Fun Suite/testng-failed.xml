@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Selenium Fun Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Core Selenium Tests - JavascriptExecutor(failed)">
-    <parameter name="url" value="https://demoqa.com/"/>
+  <test thread-count="5" name="Advanced Selenium Tests - Date Picker(failed)">
+    <parameter name="url" value="https://testautomationpractice.blogspot.com"/>
     <classes>
-      <class name="core.JavascriptExecutorTests">
+      <class name="advanced.DatePickerTests">
         <methods>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="setValuesTest2"/>
+          <include name="selectFutureDateTest"/>
         </methods>
-      </class> <!-- core.JavascriptExecutorTests -->
+      </class> <!-- advanced.DatePickerTests -->
     </classes>
-  </test> <!-- Core Selenium Tests - JavascriptExecutor(failed) -->
+  </test> <!-- Advanced Selenium Tests - Date Picker(failed) -->
 </suite> <!-- Failed suite [Selenium Fun Suite] -->

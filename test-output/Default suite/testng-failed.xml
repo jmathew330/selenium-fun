@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="advanced.StaticTable">
+      <class name="advanced.DatePicker">
         <methods>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="readAllTableData"/>
+          <include name="selectPastDateTest"/>
         </methods>
-      </class> <!-- advanced.StaticTable -->
+      </class> <!-- advanced.DatePicker -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

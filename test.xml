@@ -6,10 +6,16 @@
     <!-- ========================== -->
     <!-- Static Table Test -->
     <!-- ========================== -->
-    <test name="Advanced Selenium Tests - Static Table">
+        <test name="Advanced Selenium Tests - Static Table">
         <parameter name="url" value="https://testautomationpractice.blogspot.com" />
         <classes>
-            <class name="advanced.StaticTable" />
+            <class name="advanced.StaticTableTest" />
+        </classes>
+    </test>
+    <test name="Advanced Selenium Tests - Date Picker">
+        <parameter name="url" value="https://testautomationpractice.blogspot.com" />
+        <classes>
+            <class name="advanced.DatePickerTests" />
         </classes>
     </test>
 

@@ -123,4 +123,24 @@
         </classes>
     </test>
 
+    <!-- ========================== -->
+    <!-- 📊 Static Table Test -->
+    <!-- ========================== -->
+    <test name="Advanced Selenium Tests - Static Table">
+        <parameter name="url" value="https://testautomationpractice.blogspot.com/" />
+        <classes>
+            <class name="advanced.StaticTableTest" />
+        </classes>
+    </test>
+
+    <!-- ========================== -->
+    <!-- 📅 DatePicker Test -->
+    <!-- ========================== -->
+    <test name="Advanced Selenium Tests - DatePicker">
+        <parameter name="url" value="https://testautomationpractice.blogspot.com/" />
+        <classes>
+            <class name="advanced.DatePickerTests" />
+        </classes>
+    </test>
+
 </suite>

@@ -3,7 +3,6 @@ package core;
 import org.openqa.selenium.Keys;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import base.BaseTest;
 import io.qameta.allure.*;
 import pages.KeyboardPage;

@@ -2,11 +2,9 @@ package core;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import base.BaseTest;
 import io.qameta.allure.Description;
 import io.qameta.allure.Epic;
