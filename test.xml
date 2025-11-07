@@ -3,20 +3,32 @@
 
 <suite name="Selenium Fun Suite">
 
-    <!-- ========================== -->
-    <!-- Static Table Test -->
-    <!-- ========================== -->
         <test name="Advanced Selenium Tests - Static Table">
-        <parameter name="url" value="https://testautomationpractice.blogspot.com" />
+        <parameter name="url" value="https://testautomationpractice.blogspot.com/" />
         <classes>
             <class name="advanced.StaticTableTest" />
         </classes>
     </test>
-    <test name="Advanced Selenium Tests - Date Picker">
-        <parameter name="url" value="https://testautomationpractice.blogspot.com" />
+            <test name="Advanced Selenium Tests - Date Picker">
+        <parameter name="url" value="https://testautomationpractice.blogspot.com/" />
         <classes>
             <class name="advanced.DatePickerTests" />
         </classes>
     </test>
+            <test name="Advanced Selenium Tests - Pagination Table">
+        <parameter name="url" value="https://testautomationpractice.blogspot.com/" />
+        <classes>
+            <class name="advanced.PaginationTableTest" />
+        </classes>
+    </test>
+          <test name="Advanced Selenium Tests - Shadow DOM">
+        <parameter name="url" value="https://testautomationpractice.blogspot.com/" />
+        <classes>
+            <class name="advanced.ShadowDOMTest" />
+        </classes>
+    </test>
+
+
+
 
 </suite>

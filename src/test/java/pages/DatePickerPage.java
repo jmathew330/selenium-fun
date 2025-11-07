@@ -47,7 +47,7 @@ public class DatePickerPage {
 		input_datepicker.click();
 	}
 	
-	/** Scrolls the datepicker input field into view using JavaScript */
+	/** Scrolls to the datepicker input field into view using JavaScript */
 	public void scrollToDatePicker() {
 		js.executeScript("arguments[0].scrollIntoView(true);", input_datepicker);
 	}

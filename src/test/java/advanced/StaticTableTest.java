@@ -5,6 +5,12 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import base.BaseTest;
 import pages.StaticTablePages;
+import io.qameta.allure.Description;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Story;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
 
 /**
  * StaticTableTest validates that all data from a static web table
@@ -14,6 +20,8 @@ import pages.StaticTablePages;
  * and verifying it against a known expected dataset.
  */
 
+@Epic("Advanced Selenium Tests") // Group tests under an Epic for Allure reporting
+@Feature("Static Table Handling Module") // Identify the feature under test
 public class StaticTableTest extends BaseTest {
 	
 	StaticTablePages sp; // Page object for static table interactions
@@ -21,7 +29,10 @@ public class StaticTableTest extends BaseTest {
 	// ------------------------------------------
 	// Test: Read and Validate All Table Data
 	// ------------------------------------------
+	@Story("Read all table rows and columns and validate data") // Describe the user story
 	@Test(description = "Read all rows and columns from the static table and validate data accuracy")
+	@Severity(SeverityLevel.NORMAL)
+	@Description("Reads all data from a static table using Page Object methods and validates it against the expected dataset.")
 	public void readAllDataFromStaticTableTest() {
 		
 		// Initialize the StaticTablePages object with WebDriver
