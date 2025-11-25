@@ -143,4 +143,34 @@
         </classes>
     </test>
 
+    <!-- ========================== -->
+    <!-- 📄 Pagination Table Test -->
+    <!-- ========================== -->
+    <test name="Advanced Selenium Tests - Pagination Table">
+        <parameter name="url" value="https://testautomationpractice.blogspot.com/" />
+        <classes>
+            <class name="advanced.PaginationTableTest" />
+        </classes>
+    </test>
+
+    <!-- ========================== -->
+    <!-- 🌑 Shadow DOM Test -->
+    <!-- ========================== -->
+    <test name="Advanced Selenium Tests - Shadow DOM">
+        <parameter name="url" value="https://testautomationpractice.blogspot.com/" />
+        <classes>
+            <class name="advanced.ShadowDOMTest" />
+        </classes>
+    </test>
+
+    <!-- ========================== -->
+    <!-- 📁 File Upload Test -->
+    <!-- ========================== -->
+    <test name="Advanced Selenium Tests - File Upload">
+        <parameter name="url" value="https://the-internet.herokuapp.com/upload" />
+        <classes>
+            <class name="advanced.FileUploadTest" />
+        </classes>
+    </test>
+
 </suite>
