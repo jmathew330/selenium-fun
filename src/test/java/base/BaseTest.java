@@ -1,7 +1,6 @@
 package base;
 
 import java.time.Duration;
-
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;

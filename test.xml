@@ -3,12 +3,15 @@
 
 <suite name="Selenium Fun Suite">
 
-        <test name="Advanced Selenium Tests - Static Table">
+<!--
+
+	<test name="Advanced Selenium Tests - Static Table">
         <parameter name="url" value="https://testautomationpractice.blogspot.com/" />
         <classes>
             <class name="advanced.StaticTableTest" />
         </classes>
     </test>
+    
             <test name="Advanced Selenium Tests - Date Picker">
         <parameter name="url" value="https://testautomationpractice.blogspot.com/" />
         <classes>
@@ -21,14 +24,38 @@
             <class name="advanced.PaginationTableTest" />
         </classes>
     </test>
+
           <test name="Advanced Selenium Tests - Shadow DOM">
         <parameter name="url" value="https://testautomationpractice.blogspot.com/" />
         <classes>
             <class name="advanced.ShadowDOMTest" />
         </classes>
     </test>
-
-
-
-
+  
+  
+  
+            <test name="Advanced Selenium Tests - File Upload">
+        <parameter name="url" value="https://the-internet.herokuapp.com/upload" />
+        <classes>
+            <class name="advanced.FileUploadTest" />
+        </classes>
+    </test>
+    
+   
+    
+                <test name="Advanced Selenium Tests - DatePicker2">
+        <parameter name="url" value="https://testautomationpractice.blogspot.com/" />
+        <classes>
+            <class name="advanced.DatePickerTest2" />
+        </classes>
+    </test>
+    
+    -->
+                    <test name="Advanced Selenium Tests - StaticTable2">
+        <parameter name="url" value="https://testautomationpractice.blogspot.com/" />
+        <classes>
+            <class name="advanced.StaticTableTest2" />
+        </classes>
+    </test>
+    
 </suite>

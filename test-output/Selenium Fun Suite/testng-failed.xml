@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Selenium Fun Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Advanced Selenium Tests - Shadow DOM(failed)">
+  <test thread-count="5" name="Advanced Selenium Tests - DatePicker2(failed)">
     <parameter name="url" value="https://testautomationpractice.blogspot.com/"/>
     <classes>
-      <class name="advanced.ShadowDOMTest">
+      <class name="advanced.DatePickerTest2">
         <methods>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="testShadowDOMText1"/>
+          <include name="test"/>
         </methods>
-      </class> <!-- advanced.ShadowDOMTest -->
+      </class> <!-- advanced.DatePickerTest2 -->
     </classes>
-  </test> <!-- Advanced Selenium Tests - Shadow DOM(failed) -->
+  </test> <!-- Advanced Selenium Tests - DatePicker2(failed) -->
 </suite> <!-- Failed suite [Selenium Fun Suite] -->

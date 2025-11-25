@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-11-07T16:58:36 EST" name="Selenium Fun Suite" finished-at="2025-11-07T16:59:23 EST" duration-ms="46550">
+  <suite started-at="2025-11-23T11:56:43 EST" name="Selenium Fun Suite" finished-at="2025-11-23T11:56:51 EST" duration-ms="7896">
     <groups>
     </groups>
-    <test started-at="2025-11-07T16:58:36 EST" name="Advanced Selenium Tests - Static Table" finished-at="2025-11-07T16:58:42 EST" duration-ms="6146">
-      <class name="advanced.StaticTableTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:advanced.StaticTableTest@508dec2b]" started-at="2025-11-07T16:58:36 EST" name="setup" finished-at="2025-11-07T16:58:41 EST" duration-ms="5080" status="PASS">
+    <test started-at="2025-11-23T11:56:43 EST" name="Advanced Selenium Tests - StaticTable2" finished-at="2025-11-23T11:56:51 EST" duration-ms="7896">
+      <class name="advanced.StaticTableTest2">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:advanced.StaticTableTest2@d23e042]" started-at="2025-11-23T11:56:43 EST" name="setup" finished-at="2025-11-23T11:56:50 EST" duration-ms="6890" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,103 +18,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="readAllDataFromStaticTableTest()[pri:0, instance:advanced.StaticTableTest@508dec2b]" started-at="2025-11-07T16:58:41 EST" name="readAllDataFromStaticTableTest" description="Read all rows and columns from the static table and validate data accuracy" finished-at="2025-11-07T16:58:42 EST" duration-ms="601" status="PASS">
+        <test-method signature="test()[pri:0, instance:advanced.StaticTableTest2@d23e042]" started-at="2025-11-23T11:56:50 EST" name="test" finished-at="2025-11-23T11:56:50 EST" duration-ms="376" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- readAllDataFromStaticTableTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:advanced.StaticTableTest@508dec2b]" started-at="2025-11-07T16:58:42 EST" name="tearDown" finished-at="2025-11-07T16:58:42 EST" duration-ms="242" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- advanced.StaticTableTest -->
-    </test> <!-- Advanced Selenium Tests - Static Table -->
-    <test started-at="2025-11-07T16:58:42 EST" name="Advanced Selenium Tests - Date Picker" finished-at="2025-11-07T16:59:04 EST" duration-ms="21986">
-      <class name="advanced.DatePickerTests">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:advanced.DatePickerTests@b86de0d]" started-at="2025-11-07T16:58:42 EST" name="setup" finished-at="2025-11-07T16:58:47 EST" duration-ms="4303" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[https://testautomationpractice.blogspot.com/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="selectFutureDateTest()[pri:0, instance:advanced.DatePickerTests@b86de0d]" started-at="2025-11-07T16:58:47 EST" name="selectFutureDateTest" description="Select January 26, 2026 from the datepicker and validate the input field" finished-at="2025-11-07T16:58:51 EST" duration-ms="3929" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectFutureDateTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:advanced.DatePickerTests@b86de0d]" started-at="2025-11-07T16:58:51 EST" name="tearDown" finished-at="2025-11-07T16:58:51 EST" duration-ms="216" status="PASS">
+        </test-method> <!-- test -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:advanced.StaticTableTest2@d23e042]" started-at="2025-11-23T11:56:50 EST" name="tearDown" finished-at="2025-11-23T11:56:51 EST" duration-ms="288" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:advanced.DatePickerTests@b86de0d]" started-at="2025-11-07T16:58:51 EST" name="setup" finished-at="2025-11-07T16:58:55 EST" duration-ms="3769" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[https://testautomationpractice.blogspot.com/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="selectPastDateTest()[pri:0, instance:advanced.DatePickerTests@b86de0d]" started-at="2025-11-07T16:58:55 EST" name="selectPastDateTest" description="Select March 30, 2021 from the datepicker and validate the input field" finished-at="2025-11-07T16:59:04 EST" duration-ms="9505" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectPastDateTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:advanced.DatePickerTests@b86de0d]" started-at="2025-11-07T16:59:04 EST" name="tearDown" finished-at="2025-11-07T16:59:04 EST" duration-ms="220" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- advanced.DatePickerTests -->
-    </test> <!-- Advanced Selenium Tests - Date Picker -->
-    <test started-at="2025-11-07T16:59:04 EST" name="Advanced Selenium Tests - Pagination Table" finished-at="2025-11-07T16:59:11 EST" duration-ms="7059">
-      <class name="advanced.PaginationTableTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:advanced.PaginationTableTest@389b0789]" started-at="2025-11-07T16:59:04 EST" name="setup" finished-at="2025-11-07T16:59:08 EST" duration-ms="3936" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[https://testautomationpractice.blogspot.com/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="testPaginationTableData()[pri:0, instance:advanced.PaginationTableTest@389b0789]" started-at="2025-11-07T16:59:08 EST" name="testPaginationTableData" description="Read all data from a paginated table and validate against expected values" finished-at="2025-11-07T16:59:11 EST" duration-ms="2901" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testPaginationTableData -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:advanced.PaginationTableTest@389b0789]" started-at="2025-11-07T16:59:11 EST" name="tearDown" finished-at="2025-11-07T16:59:11 EST" duration-ms="215" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- advanced.PaginationTableTest -->
-    </test> <!-- Advanced Selenium Tests - Pagination Table -->
-    <test started-at="2025-11-07T16:59:11 EST" name="Advanced Selenium Tests - Shadow DOM" finished-at="2025-11-07T16:59:23 EST" duration-ms="11309">
-      <class name="advanced.ShadowDOMTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:advanced.ShadowDOMTest@7b50df34]" started-at="2025-11-07T16:59:11 EST" name="setup" finished-at="2025-11-07T16:59:16 EST" duration-ms="4203" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[https://testautomationpractice.blogspot.com/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="shadowDOMTextTest()[pri:0, instance:advanced.ShadowDOMTest@7b50df34]" started-at="2025-11-07T16:59:16 EST" name="shadowDOMTextTest" description="Validate text, input, checkbox, and file input inside Shadow DOM" finished-at="2025-11-07T16:59:22 EST" duration-ms="6823" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- shadowDOMTextTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:advanced.ShadowDOMTest@7b50df34]" started-at="2025-11-07T16:59:22 EST" name="tearDown" finished-at="2025-11-07T16:59:23 EST" duration-ms="276" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- advanced.ShadowDOMTest -->
-    </test> <!-- Advanced Selenium Tests - Shadow DOM -->
+      </class> <!-- advanced.StaticTableTest2 -->
+    </test> <!-- Advanced Selenium Tests - StaticTable2 -->
   </suite> <!-- Selenium Fun Suite -->
 </testng-results>

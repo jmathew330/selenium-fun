@@ -14,58 +14,173 @@ import io.qameta.allure.SeverityLevel;
 /**
  * ShadowDOMTest contains Selenium tests for interacting with Shadow DOM elements.
  * 
- * Tests include reading text from shadow elements, entering text into inputs,
- * selecting checkboxes, and verifying the visibility of file input elements.
+ * Each test validates a different element or interaction inside a Shadow DOM structure,
+ * including text validation, input typing, checkbox selection, and file input visibility.
  */
 
-@Epic("Advanced Selenium Tests") // Group tests under an Epic for Allure reporting
-@Feature("Shadow DOM Handling Module") // Identify the feature under test
+@Epic("Advanced Selenium Tests")
+@Feature("Shadow DOM Handling Module")
 public class ShadowDOMTest extends BaseTest {
 
-    ShadowDOMPage sp; // Page object for Shadow DOM actions
+    // Declare the page object reference
+    ShadowDOMPage sp;
 
     // ----------------------
-    // Test: Interacting with Shadow DOM Elements
+    // Separate Allure-enhanced tests
     // ----------------------
-    @Story("Read and interact with Shadow DOM elements") // Describe the user story
-    @Test(description = "Validate text, input, checkbox, and file input inside Shadow DOM")
+
+    /**
+     * Test 1: Validate the <span> text inside the Shadow DOM
+     * 
+     * Objective: Ensure the text inside the shadow-hosted <span> contains "Mobiles"
+     */
+    @Story("Validate Shadow DOM text elements")
+    @Test(description = "Validate <span> text inside Shadow DOM")
     @Severity(SeverityLevel.NORMAL)
-    @Description("Validates reading text from shadow elements, entering text into shadow input, selecting checkboxes, and verifying file input visibility.")
-    public void shadowDOMTextTest() throws InterruptedException {
-
-        // Initialize the ShadowDOMPage object with WebDriver
+    @Description("Ensures that the <span> element inside the shadow host displays 'Mobiles'.")
+    public void validateShadowSpanText() throws InterruptedException {
+    	
+        // Initialize the ShadowDOMPage object with driver and JavascriptExecutor
         sp = new ShadowDOMPage(driver, js);
-        
+    	
+        // Scroll to the Shadow DOM area on the page
         sp.scrollToShadowDOM();
 
-        // Validate that the <span> inside shadow host contains the text "Mobiles"
-        Assert.assertTrue(sp.getShadowHostSpanText().contains("Mobiles"), "<span> text should contain 'Mobiles'");
+        // Pause to visually observe the demo
+        pauseForDemo();
 
-        // Validate that the nested <div> inside nested shadow host contains the text "Laptops"
-        Assert.assertTrue(sp.getNestedShadowHostDivText().contains("Laptops"), "Nested <div> text should contain 'Laptops'");
+        // Verify that the <span> element inside the Shadow DOM contains the expected text
+        Assert.assertTrue(sp.getShadowHostSpanText().contains("Mobiles"),
+                "<span> text should contain 'Mobiles'");
+    }
 
-        // Validate that the <a> link inside shadow host contains the text "Blog"
-        Assert.assertTrue(sp.getShadowHostLinkText().contains("Blog"), "<a> link text should contain 'Blog'");
+    /**
+     * Test 2: Validate the nested <div> text inside Shadow DOM
+     * 
+     * Objective: Ensure that text inside the nested shadow host’s <div> contains "Laptops"
+     */
+    @Story("Validate Shadow DOM nested elements")
+    @Test(description = "Validate nested <div> text inside Shadow DOM")
+    @Severity(SeverityLevel.NORMAL)
+    @Description("Ensures that the nested <div> inside the nested shadow host displays 'Laptops'.")
+    public void validateNestedShadowDivText() throws InterruptedException {
+    	
+        // Initialize the ShadowDOMPage object with driver and JavascriptExecutor
+        sp = new ShadowDOMPage(driver, js);
+        
+        // Scroll to the Shadow DOM section
+        sp.scrollToShadowDOM();
 
-        // Enter text into the text input inside the shadow host
+        // Pause to visually observe the demo
+        pauseForDemo();
+
+        // Verify that the nested <div> inside the Shadow DOM contains the expected text
+        Assert.assertTrue(sp.getNestedShadowHostDivText().contains("Laptops"),
+                "Nested <div> text should contain 'Laptops'");
+    }
+
+    /**
+     * Test 3: Validate the link (<a>) text inside the Shadow DOM
+     * 
+     * Objective: Ensure the link text inside the shadow host contains "Blog"
+     */
+    @Story("Validate Shadow DOM links")
+    @Test(description = "Validate <a> link text inside Shadow DOM")
+    @Severity(SeverityLevel.MINOR)
+    @Description("Checks that the <a> link inside the shadow host displays 'Blog'.")
+    public void validateShadowLinkText() throws InterruptedException {
+    	
+        // Initialize the ShadowDOMPage object with driver and JavascriptExecutor
+        sp = new ShadowDOMPage(driver, js);
+        
+        // Scroll to the Shadow DOM
+        sp.scrollToShadowDOM();
+
+        // Pause to visually observe the demo
+        pauseForDemo();
+
+        // Verify the <a> link text inside the Shadow DOM
+        Assert.assertTrue(sp.getShadowHostLinkText().contains("Blog"),
+                "<a> link text should contain 'Blog'");
+    }
+
+    /**
+     * Test 4: Validate entering text into a Shadow DOM input field
+     * 
+     * Objective: Type text into a shadow-hosted input and verify that the input value matches
+     */
+    @Story("Validate Shadow DOM input fields")
+    @Test(description = "Validate entering text into Shadow DOM input")
+    @Severity(SeverityLevel.CRITICAL)
+    @Description("Verifies that text can be entered into the shadow DOM input and the entered value is retained.")
+    public void validateShadowInput() throws InterruptedException {
+    	
+        // Initialize the ShadowDOMPage object with driver and JavascriptExecutor
+        sp = new ShadowDOMPage(driver, js);
+        
+        // Scroll to the Shadow DOM
+        sp.scrollToShadowDOM();
+
+        // Enter text into the input field inside the Shadow DOM
         sp.enterTextToInput();
 
-        // Pause for demo purposes to visually observe the input
+        // Pause to visually observe the demo
         pauseForDemo();
 
-        // Validate that the input value matches the entered text
-        Assert.assertTrue(sp.getInputValue().contains("This is a Shadow DOM input"), "Input value should match entered text");
+        // Validate that the text entered into the input matches the expected value
+        Assert.assertTrue(sp.getInputValue().contains("This is a Shadow DOM input"),
+                "Input value should match entered text");
+    }
 
-        // Select the checkbox inside the shadow host
+    /**
+     * Test 5: Validate selecting a checkbox inside the Shadow DOM
+     * 
+     * Objective: Select a checkbox inside the shadow host and confirm its selection status
+     */
+    @Story("Validate Shadow DOM checkboxes")
+    @Test(description = "Validate selecting Shadow DOM checkbox")
+    @Severity(SeverityLevel.CRITICAL)
+    @Description("Ensures that the checkbox inside the shadow host can be selected and remains checked.")
+    public void validateShadowCheckbox() throws InterruptedException {
+    	
+        // Initialize the ShadowDOMPage object with driver and JavascriptExecutor
+        sp = new ShadowDOMPage(driver, js);
+        
+        // Scroll to the Shadow DOM
+        sp.scrollToShadowDOM();
+
+        // Select the checkbox inside the Shadow DOM
         sp.selectCheckbox();
 
-        // Pause for demo purposes to visually observe the checkbox selection
+        // Pause to visually observe the demo
         pauseForDemo();
 
-        // Validate that the checkbox is selected
+        // Verify that the checkbox is selected successfully
         Assert.assertTrue(sp.isCheckboxSelected(), "Checkbox should be selected");
+    }
 
-        // Validate that the file input element inside the shadow host is visible
-        Assert.assertTrue(sp.isFileInputElementVisible(), "File input element should be visible");
+    /**
+     * Test 6: Validate visibility of file input inside Shadow DOM
+     * 
+     * Objective: Ensure that the file input element inside the shadow host is visible to the user
+     */
+    @Story("Validate Shadow DOM file inputs")
+    @Test(description = "Validate visibility of file input inside Shadow DOM")
+    @Severity(SeverityLevel.MINOR)
+    @Description("Verifies that the file input element inside the shadow host is visible on the page.")
+    public void validateFileInputVisibility() throws InterruptedException {
+    	
+        // Initialize the ShadowDOMPage object with driver and JavascriptExecutor
+        sp = new ShadowDOMPage(driver, js);
+        
+        // Scroll to the Shadow DOM
+        sp.scrollToShadowDOM();
+
+        // Pause to visually observe the demo
+        pauseForDemo();
+
+        // Assert that the file input element inside the Shadow DOM is displayed on the page
+        Assert.assertTrue(sp.isFileInputElementVisible(),
+                "File input element should be visible");
     }
 }

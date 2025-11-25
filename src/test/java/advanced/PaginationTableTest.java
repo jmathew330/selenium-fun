@@ -24,7 +24,7 @@ import io.qameta.allure.SeverityLevel;
 public class PaginationTableTest extends BaseTest {
 
     PaginationTablePage pp; // Page object for pagination table actions
-
+    
     // ----------------------
     // Test: Validate Paginated Table Data
     // ----------------------
