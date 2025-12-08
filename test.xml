@@ -50,12 +50,45 @@
         </classes>
     </test>
     
-    -->
-                    <test name="Advanced Selenium Tests - StaticTable2">
+    
+                    <test name="Advanced Selenium Tests - PaginationTable2">
         <parameter name="url" value="https://testautomationpractice.blogspot.com/" />
         <classes>
-            <class name="advanced.StaticTableTest2" />
+            <class name="advanced.PaginationTableTest2" />
         </classes>
     </test>
+    
+    
+                        <test name="Framework Selenium Tests - Data Provider Test">
+        <parameter name="url" value="https://the-internet.herokuapp.com/login" />
+        <classes>
+            <class name="framework.DataProviderTest" />
+        </classes>
+    </test>
+    
+      -->
+    
+                            <test name="Framework Selenium Tests - TestNG Annotations">
+        <classes>
+            <class name="framework.TestNGAnnotationsTest" />
+        </classes>
+    </test>
+    
+        
+    
+                            <test name="Framework Selenium Tests - Data Provider Test">
+        <parameter name="url" value="https://the-internet.herokuapp.com/login" />
+        <classes>
+            <class name="framework.DataProviderTest" />
+        </classes>
+    </test>
+    
+                                <test name="Framework Selenium Tests - Assertions Test">
+        <classes>
+            <class name="framework.AssertionsTest" />
+        </classes>
+    </test>
+    
+    
     
 </suite>

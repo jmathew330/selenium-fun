@@ -1,0 +1,84 @@
+############################
+# OS-SPECIFIC FILES
+############################
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+############################
+# IDE / EDITOR FILES
+############################
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+
+# VS Code
+.vscode/
+
+############################
+# JAVA / MAVEN BUILD FILES
+############################
+
+# Maven target directory
+target/
+
+# Java compiled files
+bin/
+out/
+*.class
+
+# Logs
+*.log
+
+############################
+# SELENIUM DRIVER BINARIES
+############################
+drivers/
+*.exe
+*.dll
+*.so
+*.dylib
+
+############################
+# REPORTS & OUTPUT
+############################
+
+# Allure
+allure-results/
+allure-report/
+
+# Extent Reports
+extent-report/
+*.html
+
+# TestNG
+test-output/
+
+############################
+# ENVIRONMENT / SECRETS
+############################
+.env
+*.env
+*.properties.local
+*.secret
+*.key
+
+############################
+# MISC
+############################
+*.tmp
+*.swp
+*.bak

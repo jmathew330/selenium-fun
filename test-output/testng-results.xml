@@ -1,32 +1,110 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-11-23T11:56:43 EST" name="Selenium Fun Suite" finished-at="2025-11-23T11:56:51 EST" duration-ms="7896">
+  <suite started-at="2025-12-07T17:10:27 EST" name="Selenium Fun Suite" finished-at="2025-12-07T17:10:33 EST" duration-ms="5818">
     <groups>
     </groups>
-    <test started-at="2025-11-23T11:56:43 EST" name="Advanced Selenium Tests - StaticTable2" finished-at="2025-11-23T11:56:51 EST" duration-ms="7896">
-      <class name="advanced.StaticTableTest2">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:advanced.StaticTableTest2@d23e042]" started-at="2025-11-23T11:56:43 EST" name="setup" finished-at="2025-11-23T11:56:50 EST" duration-ms="6890" status="PASS">
+    <test started-at="2025-12-07T17:10:27 EST" name="Framework Selenium Tests - TestNG Annotations" finished-at="2025-12-07T17:10:27 EST" duration-ms="300">
+      <class name="framework.TestNGAnnotationsTest">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:framework.TestNGAnnotationsTest@20bd8be5]" started-at="2025-12-07T17:10:27 EST" name="beforeTest" finished-at="2025-12-07T17:10:27 EST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:framework.TestNGAnnotationsTest@20bd8be5]" started-at="2025-12-07T17:10:27 EST" name="beforeClass" finished-at="2025-12-07T17:10:27 EST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:framework.TestNGAnnotationsTest@20bd8be5]" started-at="2025-12-07T17:10:27 EST" name="beforeMethod" finished-at="2025-12-07T17:10:27 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testOne()[pri:0, instance:framework.TestNGAnnotationsTest@20bd8be5]" started-at="2025-12-07T17:10:27 EST" name="testOne" description="Executes Test One" finished-at="2025-12-07T17:10:27 EST" duration-ms="70" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOne -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:framework.TestNGAnnotationsTest@20bd8be5]" started-at="2025-12-07T17:10:27 EST" name="afterMethod" finished-at="2025-12-07T17:10:27 EST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:framework.TestNGAnnotationsTest@20bd8be5]" started-at="2025-12-07T17:10:27 EST" name="beforeMethod" finished-at="2025-12-07T17:10:27 EST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testTwo()[pri:0, instance:framework.TestNGAnnotationsTest@20bd8be5]" started-at="2025-12-07T17:10:27 EST" name="testTwo" description="Executes Test Two" finished-at="2025-12-07T17:10:27 EST" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTwo -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:framework.TestNGAnnotationsTest@20bd8be5]" started-at="2025-12-07T17:10:27 EST" name="afterMethod" finished-at="2025-12-07T17:10:27 EST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:framework.TestNGAnnotationsTest@20bd8be5]" started-at="2025-12-07T17:10:27 EST" name="afterClass" finished-at="2025-12-07T17:10:27 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:framework.TestNGAnnotationsTest@20bd8be5]" started-at="2025-12-07T17:10:27 EST" name="afterTest" finished-at="2025-12-07T17:10:27 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- framework.TestNGAnnotationsTest -->
+    </test> <!-- Framework Selenium Tests - TestNG Annotations -->
+    <test started-at="2025-12-07T17:10:27 EST" name="Framework Selenium Tests - Data Provider Test" finished-at="2025-12-07T17:10:33 EST" duration-ms="5442">
+      <class name="framework.DataProviderTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:framework.DataProviderTest@19b89d4]" started-at="2025-12-07T17:10:27 EST" name="setup" finished-at="2025-12-07T17:10:32 EST" duration-ms="4457" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[https://testautomationpractice.blogspot.com/]]>
+                <![CDATA[https://the-internet.herokuapp.com/login]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="test()[pri:0, instance:advanced.StaticTableTest2@d23e042]" started-at="2025-11-23T11:56:50 EST" name="test" finished-at="2025-11-23T11:56:50 EST" duration-ms="376" status="PASS">
+        <test-method signature="loginUsingDataProviderTest(java.lang.String,java.lang.String)[pri:0, instance:framework.DataProviderTest@19b89d4]" started-at="2025-12-07T17:10:32 EST" name="loginUsingDataProviderTest" description="Perform login test using data-driven inputs" data-provider="loginData" finished-at="2025-12-07T17:10:33 EST" duration-ms="759" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tomsmith]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SuperSecretPassword!]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:advanced.StaticTableTest2@d23e042]" started-at="2025-11-23T11:56:50 EST" name="tearDown" finished-at="2025-11-23T11:56:51 EST" duration-ms="288" status="PASS">
+        </test-method> <!-- loginUsingDataProviderTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:framework.DataProviderTest@19b89d4]" started-at="2025-12-07T17:10:33 EST" name="tearDown" finished-at="2025-12-07T17:10:33 EST" duration-ms="207" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- advanced.StaticTableTest2 -->
-    </test> <!-- Advanced Selenium Tests - StaticTable2 -->
+      </class> <!-- framework.DataProviderTest -->
+    </test> <!-- Framework Selenium Tests - Data Provider Test -->
+    <test started-at="2025-12-07T17:10:33 EST" name="Framework Selenium Tests - Assertions Test" finished-at="2025-12-07T17:10:33 EST" duration-ms="28">
+      <class name="framework.AssertionsTest">
+        <test-method signature="hardAssertionsTest()[pri:0, instance:framework.AssertionsTest@14f232c4]" started-at="2025-12-07T17:10:33 EST" name="hardAssertionsTest" description="Executes hard assertion validations." finished-at="2025-12-07T17:10:33 EST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hardAssertionsTest -->
+        <test-method signature="softAssertionsTest()[pri:0, instance:framework.AssertionsTest@14f232c4]" started-at="2025-12-07T17:10:33 EST" name="softAssertionsTest" description="Executes soft assertion validations." finished-at="2025-12-07T17:10:33 EST" duration-ms="14" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- softAssertionsTest -->
+      </class> <!-- framework.AssertionsTest -->
+      <class name="framework.TestNGAnnotationsTest">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:framework.TestNGAnnotationsTest@20bd8be5]" started-at="2025-12-07T17:10:27 EST" name="beforeSuite" finished-at="2025-12-07T17:10:27 EST" duration-ms="53" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:framework.TestNGAnnotationsTest@20bd8be5]" started-at="2025-12-07T17:10:33 EST" name="afterSuite" finished-at="2025-12-07T17:10:33 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- framework.TestNGAnnotationsTest -->
+    </test> <!-- Framework Selenium Tests - Assertions Test -->
   </suite> <!-- Selenium Fun Suite -->
 </testng-results>
